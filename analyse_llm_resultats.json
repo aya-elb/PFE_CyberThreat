@@ -1,0 +1,12 @@
+{
+  "date_analyse": "2026-04-13",
+  "nb_iocs_analyses": 1,
+  "iocs": [
+    {
+      "ioc": "smbxxx.tmp",
+      "type": "domaine",
+      "risque": "ÉLEVÉ",
+      "action_recommandee": "Analyser"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "date_analyse": "2026-05-11 19:33:51",
+  "n_echantillons": 2000,
+  "modeles": {
+    "Logistic_Regression": {
+      "accuracy": 86.5,
+      "precision": 87.02,
+      "recall": 77.02,
+      "f1_score": 81.72
+    },
+    "Random_Forest": {
+      "accuracy": 99.83,
+      "precision": 99.58,
+      "recall": 100.0,
+      "f1_score": 99.79
+    },
+    "SVM": {
+      "accuracy": 78.5,
+      "precision": 92.74,
+      "recall": 48.94,
+      "f1_score": 64.07
+    }
+  },
+  "meilleur_modele": "Random_Forest"
+}

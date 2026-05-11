@@ -1,0 +1,28 @@
+{
+  "date_analyse": "2026-05-11 19:33:59",
+  "methode": "NetworkX - Graphe de menaces",
+  "nb_noeuds": 24,
+  "nb_relations": 29,
+  "noeuds_importants": [
+    {
+      "noeud": "Ryuk",
+      "connexions": 4
+    },
+    {
+      "noeud": "185.130.5.253",
+      "connexions": 3
+    },
+    {
+      "noeud": "45.227.254.10",
+      "connexions": 3
+    },
+    {
+      "noeud": "malware-c2.net",
+      "connexions": 3
+    },
+    {
+      "noeud": "ransomware-ctrl.com",
+      "connexions": 3
+    }
+  ]
+}

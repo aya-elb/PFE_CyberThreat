@@ -1,0 +1,44 @@
+{
+  "date_analyse": "2026-05-11 19:33:57",
+  "methode": "K-Means Clustering",
+  "n_menaces": 200,
+  "n_clusters": 4,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "nb_menaces": 40,
+      "moyenne_connexions": 205.1,
+      "moyenne_ports": 5.4,
+      "moyenne_duree_heures": 4.2,
+      "moyenne_gravite": 87.1,
+      "type_menace": "🔴 DDoS / Attaque massive"
+    },
+    {
+      "cluster_id": 1,
+      "nb_menaces": 83,
+      "moyenne_connexions": 57.4,
+      "moyenne_ports": 15.3,
+      "moyenne_duree_heures": 2.9,
+      "moyenne_gravite": 52.2,
+      "type_menace": "🟢 Attaque variee / Multiple"
+    },
+    {
+      "cluster_id": 2,
+      "nb_menaces": 36,
+      "moyenne_connexions": 25.9,
+      "moyenne_ports": 50.0,
+      "moyenne_duree_heures": 1.2,
+      "moyenne_gravite": 41.3,
+      "type_menace": "🟠 Scan de ports / Reconnaissance"
+    },
+    {
+      "cluster_id": 3,
+      "nb_menaces": 41,
+      "moyenne_connexions": 32.9,
+      "moyenne_ports": 9.6,
+      "moyenne_duree_heures": 9.8,
+      "moyenne_gravite": 72.8,
+      "type_menace": "🟡 Malware persistant / APT"
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "date_analyse": "2026-05-11 19:33:48",
+  "methode": "Z-score (deviation statistique)",
+  "seuil": 3,
+  "total_echantillons": 1000,
+  "moyenne_mbps": 140.91,
+  "ecart_type_mbps": 132.47,
+  "anomalies_detectees": 39,
+  "pourcentage_anomalies": 3.9
+}
