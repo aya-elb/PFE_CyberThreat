@@ -1,10 +1,323 @@
 {
-  "date_analyse": "2026-05-11 19:33:48",
-  "methode": "Z-score (deviation statistique)",
-  "seuil": 3,
-  "total_echantillons": 1000,
-  "moyenne_mbps": 140.91,
-  "ecart_type_mbps": 132.47,
-  "anomalies_detectees": 39,
-  "pourcentage_anomalies": 3.9
+  "date_analyse": "2026-05-11 22:49:18",
+  "source_donnees": "scraped_all.json (donnees reelles collectees)",
+  "methode": "Z-score sur longueur des IOCs (IPs, plages CIDR, domaines, hashs)",
+  "total_iocs": 4483,
+  "moyenne_longueur": 14.74,
+  "ecart_type": 1.61,
+  "seuil_zscore": 2.5,
+  "nb_anomalies": 62,
+  "pourcentage": 1.38,
+  "anomalies": [
+    {
+      "ioc": "IP:0.0.0.0/8",
+      "longueur": 9,
+      "z_score": 3.5733
+    },
+    {
+      "ioc": "IP:10.0.0.0/8",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:dismissedNotifications.replace",
+      "longueur": 30,
+      "z_score": 9.5025
+    },
+    {
+      "ioc": "DOM:awards.php",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:fonts.css",
+      "longueur": 9,
+      "z_score": 3.5733
+    },
+    {
+      "ioc": "DOM:xhtml1-transitional.dtd",
+      "longueur": 23,
+      "z_score": 5.1439
+    },
+    {
+      "ioc": "DOM:thread.js",
+      "longueur": 9,
+      "z_score": 3.5733
+    },
+    {
+      "ioc": "DOM:jquery.plugins.min.js",
+      "longueur": 21,
+      "z_score": 3.8986
+    },
+    {
+      "ioc": "DOM:purple.gif",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:spear.cx",
+      "longueur": 8,
+      "z_score": 4.1959
+    },
+    {
+      "ioc": "DOM:task.php",
+      "longueur": 8,
+      "z_score": 4.1959
+    },
+    {
+      "ioc": "DOM:jquery.js",
+      "longueur": 9,
+      "z_score": 3.5733
+    },
+    {
+      "ioc": "DOM:document.cookie.split",
+      "longueur": 21,
+      "z_score": 3.8986
+    },
+    {
+      "ioc": "DOM:774k.csv",
+      "longueur": 8,
+      "z_score": 4.1959
+    },
+    {
+      "ioc": "DOM:global.css",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:bam.css",
+      "longueur": 7,
+      "z_score": 4.8186
+    },
+    {
+      "ioc": "DOM:member.png",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:member.php",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:forum-23-page-3.html",
+      "longueur": 20,
+      "z_score": 3.2759
+    },
+    {
+      "ioc": "DOM:Spear.png",
+      "longueur": 9,
+      "z_score": 3.5733
+    },
+    {
+      "ioc": "DOM:rep.css",
+      "longueur": 7,
+      "z_score": 4.8186
+    },
+    {
+      "ioc": "DOM:index.php",
+      "longueur": 9,
+      "z_score": 3.5733
+    },
+    {
+      "ioc": "DOM:spear4h2potiyk43oilufhuq2jqbioyaizcs7xttlyw75s5ykwxpxlid.onion",
+      "longueur": 62,
+      "z_score": 29.4274
+    },
+    {
+      "ioc": "DOM:sad.png",
+      "longueur": 7,
+      "z_score": 4.8186
+    },
+    {
+      "ioc": "DOM:mkc.css",
+      "longueur": 7,
+      "z_score": 4.8186
+    },
+    {
+      "ioc": "DOM:custom.css",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:alerts.css",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:document.documentElement.scrollHeight",
+      "longueur": 37,
+      "z_score": 13.861
+    },
+    {
+      "ioc": "DOM:www.w3.org",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:tabbed.css",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:mod.css",
+      "longueur": 7,
+      "z_score": 4.8186
+    },
+    {
+      "ioc": "DOM:icon.css",
+      "longueur": 8,
+      "z_score": 4.1959
+    },
+    {
+      "ioc": "DOM:csc.gif",
+      "longueur": 7,
+      "z_score": 4.8186
+    },
+    {
+      "ioc": "DOM:thankyoulike.min.js",
+      "longueur": 19,
+      "z_score": 2.6533
+    },
+    {
+      "ioc": "DOM:search.php",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:css3.css",
+      "longueur": 8,
+      "z_score": 4.1959
+    },
+    {
+      "ioc": "DOM:document.documentElement.scrollTop",
+      "longueur": 34,
+      "z_score": 11.9931
+    },
+    {
+      "ioc": "DOM:report.js",
+      "longueur": 9,
+      "z_score": 3.5733
+    },
+    {
+      "ioc": "DOM:general.js",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:donate.css",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "DOM:forum-23-page-8.html",
+      "longueur": 20,
+      "z_score": 3.2759
+    },
+    {
+      "ioc": "DOM:t.me",
+      "longueur": 4,
+      "z_score": 6.6866
+    },
+    {
+      "ioc": "DOM:css.css",
+      "longueur": 7,
+      "z_score": 4.8186
+    },
+    {
+      "ioc": "DOM:misc.php",
+      "longueur": 8,
+      "z_score": 4.1959
+    },
+    {
+      "ioc": "DOM:forum-23-page-2.html",
+      "longueur": 20,
+      "z_score": 3.2759
+    },
+    {
+      "ioc": "DOM:lifeofadesigner.com",
+      "longueur": 19,
+      "z_score": 2.6533
+    },
+    {
+      "ioc": "DOM:css.php",
+      "longueur": 7,
+      "z_score": 4.8186
+    },
+    {
+      "ioc": "DOM:Spear.cx",
+      "longueur": 8,
+      "z_score": 4.1959
+    },
+    {
+      "ioc": "DOM:forum-23-page-4.html",
+      "longueur": 20,
+      "z_score": 3.2759
+    },
+    {
+      "ioc": "DOM:myadvertisements.js",
+      "longueur": 19,
+      "z_score": 2.6533
+    },
+    {
+      "ioc": "DOM:forum-23-page-5.html",
+      "longueur": 20,
+      "z_score": 3.2759
+    },
+    {
+      "ioc": "DOM:onyx.css",
+      "longueur": 8,
+      "z_score": 4.1959
+    },
+    {
+      "ioc": "DOM:canary.txt",
+      "longueur": 10,
+      "z_score": 2.9506
+    },
+    {
+      "ioc": "HASH:3adab5c8221812cac25d9b8e9b1c45eb",
+      "longueur": 32,
+      "z_score": 10.7478
+    },
+    {
+      "ioc": "HASH:023a251bba97d9c9cf870774e28b2bd3",
+      "longueur": 32,
+      "z_score": 10.7478
+    },
+    {
+      "ioc": "HASH:8d041c8a5169644ec7d887d5be3364de",
+      "longueur": 32,
+      "z_score": 10.7478
+    },
+    {
+      "ioc": "HASH:eecd5663fc178327e8faa99323c9ade3",
+      "longueur": 32,
+      "z_score": 10.7478
+    },
+    {
+      "ioc": "HASH:09df81a60a6269ce03f1f271bcbda3ee",
+      "longueur": 32,
+      "z_score": 10.7478
+    },
+    {
+      "ioc": "HASH:8fffcb90dbc69c296be5dfecbeb998b7",
+      "longueur": 32,
+      "z_score": 10.7478
+    },
+    {
+      "ioc": "HASH:aab5dcc23b16e05357780d6bdc5330df",
+      "longueur": 32,
+      "z_score": 10.7478
+    },
+    {
+      "ioc": "HASH:89e81a5c61185325958f541ea7ce1ab5",
+      "longueur": 32,
+      "z_score": 10.7478
+    },
+    {
+      "ioc": "HASH:3580ce314867d2c9f09fc18b79a6f003",
+      "longueur": 32,
+      "z_score": 10.7478
+    }
+  ]
 }

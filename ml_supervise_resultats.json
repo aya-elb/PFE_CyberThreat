@@ -1,25 +1,30 @@
 {
-  "date_analyse": "2026-05-11 19:33:51",
-  "n_echantillons": 2000,
+  "date_analyse": "2026-05-11 22:49:23",
+  "source_donnees": "scraped_all.json (donnees reelles collectees)",
+  "methode_labellisation": "croisement blacklist Firehol + patterns TLD suspects + hashs spear.cx",
+  "n_total_iocs": 4578,
+  "n_menaces": 4395,
+  "n_benins": 183,
+  "n_apres_equilibrage": 732,
   "modeles": {
     "Logistic_Regression": {
-      "accuracy": 86.5,
-      "precision": 87.02,
-      "recall": 77.02,
-      "f1_score": 81.72
+      "accuracy": 97.73,
+      "precision": 97.25,
+      "recall": 100.0,
+      "f1_score": 98.61
     },
     "Random_Forest": {
-      "accuracy": 99.83,
-      "precision": 99.58,
-      "recall": 100.0,
-      "f1_score": 99.79
+      "accuracy": 96.82,
+      "precision": 97.75,
+      "recall": 98.31,
+      "f1_score": 98.03
     },
     "SVM": {
-      "accuracy": 78.5,
-      "precision": 92.74,
-      "recall": 48.94,
-      "f1_score": 64.07
+      "accuracy": 95.91,
+      "precision": 95.65,
+      "recall": 99.44,
+      "f1_score": 97.51
     }
   },
-  "meilleur_modele": "Random_Forest"
+  "meilleur_modele": "Logistic_Regression"
 }

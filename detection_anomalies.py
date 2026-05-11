@@ -1,79 +1,107 @@
-import numpy as np
-import pandas as pd
 import json
+import numpy as np
+import re
 from datetime import datetime
 
 print("\n=== DETECTION D'ANOMALIES (Z-SCORE) ===\n")
-print("Methode demandee par le PDF: Z-score (deviation statistique)")
+print("Methode demandee par le PDF : Z-score (deviation statistique)")
 
-# 1. SIMULATION DE DONNEES
-print("[1/3] Generation des donnees de trafic...")
+# ------------------------------------------------------------------
+# 1. CHARGEMENT DES DONNEES REELLES
+# ------------------------------------------------------------------
+print("\n[1/3] Chargement des IOCs reels...")
 
-np.random.seed(42)
-n_normales = 900
-n_anomalies = 100
+with open("scraped_all.json", "r", encoding="utf-8") as f:
+    data = json.load(f)
 
-# Donnees normales (debit entre 50 et 150 Mbps)
-debits_normaux = np.random.normal(100, 30, n_normales)
+ips_raw  = data.get("ips", [])
+domaines = data.get("domaines", [])
+hashs    = data.get("hashs_md5", [])
 
-# Donnees anomalies (debit anormalement eleve > 300 Mbps)
-debits_anormaux = np.random.normal(500, 150, n_anomalies)
+# Nettoyage : on garde IPs et plages CIDR valides, on enleve les commentaires
+ips = [
+    ip.strip() for ip in ips_raw
+    if ip.strip()
+    and not ip.strip().startswith("#")
+    and re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(/\d{1,2})?$', ip.strip())
+]
 
-# Fusion
-debits = np.concatenate([debits_normaux, debits_anormaux])
-df = pd.DataFrame({'debit_mbps': debits})
+valeurs = []
+labels  = []
 
-print(f"   Total echantillons: {len(df)}")
-print(f"   Moyenne des debits: {df['debit_mbps'].mean():.1f} Mbps")
-print(f"   Ecart-type: {df['debit_mbps'].std():.1f}")
+for ip in ips:
+    valeurs.append(len(ip))
+    labels.append(f"IP:{ip}")
 
-# 2. DETECTION PAR Z-SCORE (methode demandee par le PDF)
+for dom in domaines:
+    valeurs.append(len(dom))
+    labels.append(f"DOM:{dom}")
+
+for h in hashs:
+    valeurs.append(len(h))
+    labels.append(f"HASH:{h}")
+
+valeurs = np.array(valeurs, dtype=float)
+print(f"    Total IOCs charges : {len(valeurs)}")
+print(f"    IPs/plages : {len(ips)} | Domaines : {len(domaines)} | Hashs : {len(hashs)}")
+
+# ------------------------------------------------------------------
+# 2. CALCUL DU Z-SCORE
+# ------------------------------------------------------------------
 print("\n[2/3] Detection des anomalies par Z-score...")
 
-# Calcul du Z-score pour chaque valeur
-moyenne = df['debit_mbps'].mean()
-ecart_type = df['debit_mbps'].std()
-df['z_score'] = (df['debit_mbps'] - moyenne) / ecart_type
+moyenne    = np.mean(valeurs)
+ecart_type = np.std(valeurs)
+seuil      = 2.5
 
-# Un Z-score > 3 signifie une anomalie (deviation de 3 ecarts-types)
-SEUIL = 3
-df['anomalie'] = df['z_score'].abs() > SEUIL
+print(f"    Moyenne des longueurs : {moyenne:.2f} caracteres")
+print(f"    Ecart-type            : {ecart_type:.2f}")
+print(f"    Seuil Z-score utilise : > {seuil}")
 
-n_anomalies_detectees = df['anomalie'].sum()
+z_scores      = np.abs((valeurs - moyenne) / ecart_type)
+anomalies_idx = np.where(z_scores > seuil)[0]
 
-print(f"   Seuil utilise: Z-score > {SEUIL}")
-print(f"   Anomalies detectees: {n_anomalies_detectees}")
-print(f"   Pourcentage: {n_anomalies_detectees/len(df)*100:.1f}%")
+print(f"    Anomalies detectees   : {len(anomalies_idx)}")
+print(f"    Pourcentage           : {len(anomalies_idx)/len(valeurs)*100:.1f}%")
 
-# 3. AFFICHAGE DES ANOMALIES
-print("\n[3/3] Exemples d'anomalies detectees:")
+# ------------------------------------------------------------------
+# 3. AFFICHAGE ET SAUVEGARDE
+# ------------------------------------------------------------------
+print("\n[3/3] Exemples d'anomalies detectees (IOCs suspects) :")
+for idx in anomalies_idx[:8]:
+    print(f"    - {labels[idx]:<50} | longueur: {int(valeurs[idx])} | Z-score: {z_scores[idx]:.2f}")
 
-anomalies_trouvees = df[df['anomalie'] == True]
-for idx, row in anomalies_trouvees.head(5).iterrows():
-    print(f"   - Debit: {row['debit_mbps']:.0f} Mbps | Z-score: {row['z_score']:.2f}")
+anomalies_liste = [
+    {
+        "ioc"      : labels[idx],
+        "longueur" : int(valeurs[idx]),
+        "z_score"  : round(float(z_scores[idx]), 4)
+    }
+    for idx in anomalies_idx
+]
 
-# 4. SAUVEGARDE DES RESULTATS
 rapport = {
-    "date_analyse": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-    "methode": "Z-score (deviation statistique)",
-    "seuil": SEUIL,
-    "total_echantillons": len(df),
-    "moyenne_mbps": round(moyenne, 2),
-    "ecart_type_mbps": round(ecart_type, 2),
-    "anomalies_detectees": int(n_anomalies_detectees),
-    "pourcentage_anomalies": round(n_anomalies_detectees / len(df) * 100, 2)
+    "date_analyse"     : datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+    "source_donnees"   : "scraped_all.json (donnees reelles collectees)",
+    "methode"          : "Z-score sur longueur des IOCs (IPs, plages CIDR, domaines, hashs)",
+    "total_iocs"       : len(valeurs),
+    "moyenne_longueur" : round(float(moyenne), 2),
+    "ecart_type"       : round(float(ecart_type), 2),
+    "seuil_zscore"     : seuil,
+    "nb_anomalies"     : len(anomalies_idx),
+    "pourcentage"      : round(len(anomalies_idx) / len(valeurs) * 100, 2),
+    "anomalies"        : anomalies_liste
 }
 
 with open("detection_anomalies_resultats.json", "w", encoding="utf-8") as f:
     json.dump(rapport, f, indent=2, ensure_ascii=False)
 
-print("\nRESUME DE LA DETECTION D'ANOMALIES (Z-SCORE)")
-print("="*50)
-print(f"Total echantillons: {len(df)}")
-print(f"Moyenne: {moyenne:.1f} Mbps")
-print(f"Ecart-type: {ecart_type:.1f}")
-print(f"Anomalies detectees: {n_anomalies_detectees}")
-print(f"Pourcentage: {n_anomalies_detectees/len(df)*100:.1f}%")
-print("\nResultats sauvegardes dans 'detection_anomalies_resultats.json'")
-
+print(f"\nRESUME DE LA DETECTION D'ANOMALIES (Z-SCORE)")
+print("=" * 50)
+print(f"Source          : scraped_all.json (donnees reelles)")
+print(f"Total IOCs      : {len(valeurs)}")
+print(f"Moyenne         : {moyenne:.2f} caracteres")
+print(f"Ecart-type      : {ecart_type:.2f}")
+print(f"Anomalies       : {len(anomalies_idx)} ({len(anomalies_idx)/len(valeurs)*100:.1f}%)")
+print(f"\nResultats sauvegardes dans 'detection_anomalies_resultats.json'")
 print("\n=== FIN DETECTION ANOMALIES (Z-SCORE) ===")

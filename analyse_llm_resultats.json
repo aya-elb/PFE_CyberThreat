@@ -1,12 +1,5 @@
 {
-  "date_analyse": "2026-04-13",
-  "nb_iocs_analyses": 1,
-  "iocs": [
-    {
-      "ioc": "smbxxx.tmp",
-      "type": "domaine",
-      "risque": "ÉLEVÉ",
-      "action_recommandee": "Analyser"
-    }
-  ]
+  "date": "2026-05-11 22:49:18",
+  "modele": "qwen:1.8b",
+  "reponse": "IOCs (Impacts of Criticality) are critical events that have a significant impact on the stability and security of an organization or system.\nHere are some key characteristics of IOCs:\n\n1. High impact: IOCs can have a high impact on various aspects of an organization, such as its financial stability, customer satisfaction, employee productivity, and overall competitiveness.\n\n2. Urgent nature: IOCs often happen at a very urgent and critical stage in an organization's life cycle or development process. These events may result in the sudden collapse, degradation, or malfunction of critical components, systems, or infrastructure, thereby posing significant risks to the overall stability, security, and performance of the organization.\n\n3. Contingencies: IOCs often involve a high level of uncertainty or contingency, which can lead to significant impacts on various aspects of an organization, such as its financial stability, customer satisfaction, employee productivity, and overall competitiveness.\n\nTo mitigate these risks effectively, organizations often implement various risk management strategies, including:\n\n1. Identification and analysis of potential risks: Organizations often use a systematic approach to identify and analyze potential risks that could impact the organization's stability, security, and performance. This process typically involves gathering relevant data, analyzing the data using statistical techniques, and identifying the most critical risks that need to be addressed.\n\n2. Risk mitigation planning: Organizations often implement risk mitigation plans to mitigate the identified high-level risks effectively. These risk mitigation plans typically involve implementing various control mechanisms, such as segregation of duties, role-based access controls, etc., to ensure that employees do not interact with sensitive business information or other critical resources that require strict protection and management.\n\n3. Risk response planning: Organizations often implement risk response planning to manage the identified high-level risks effectively and efficiently. These risk response plans typically involve implementing various communication and notification mechanisms, such as email notifications, SMS alerts, etc., to ensure that all employees involved in the identified high-level risks are promptly notified of the risks and their potential impact on the organization's stability, security, and performance.\n \nNote: The above information is not exhaustive and may contain additional details or subcategories."
 }

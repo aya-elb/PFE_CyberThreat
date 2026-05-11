@@ -1,44 +1,52 @@
 {
-  "date_analyse": "2026-05-11 19:33:57",
-  "methode": "K-Means Clustering",
-  "n_menaces": 200,
-  "n_clusters": 4,
-  "clusters": [
-    {
-      "cluster_id": 0,
-      "nb_menaces": 40,
-      "moyenne_connexions": 205.1,
-      "moyenne_ports": 5.4,
-      "moyenne_duree_heures": 4.2,
-      "moyenne_gravite": 87.1,
-      "type_menace": "🔴 DDoS / Attaque massive"
+  "date_analyse": "2026-05-11 22:49:32",
+  "source_donnees": "scraped_all.json (donnees reelles collectees)",
+  "methode": "K-Means (k=4) sur features extraites des IOCs reels",
+  "total_iocs": 4483,
+  "clusters": {
+    "0": {
+      "nom": "Plage reseau blacklistee / DDoS",
+      "nb_iocs": 2819,
+      "moy_longueur": 14.95,
+      "moy_entropie": 2.9413,
+      "exemples": [
+        "IP:5.133.101.0/24",
+        "IP:5.183.60.0/22",
+        "IP:5.188.236.0/23"
+      ]
     },
-    {
-      "cluster_id": 1,
-      "nb_menaces": 83,
-      "moyenne_connexions": 57.4,
-      "moyenne_ports": 15.3,
-      "moyenne_duree_heures": 2.9,
-      "moyenne_gravite": 52.2,
-      "type_menace": "🟢 Attaque variee / Multiple"
+    "1": {
+      "nom": "Domaine suspect / Phishing",
+      "nb_iocs": 85,
+      "moy_longueur": 12.31,
+      "moy_entropie": 3.112,
+      "exemples": [
+        "DOM:SpearProgram.png",
+        "DOM:awards.php",
+        "DOM:fonts.css"
+      ]
     },
-    {
-      "cluster_id": 2,
-      "nb_menaces": 36,
-      "moyenne_connexions": 25.9,
-      "moyenne_ports": 50.0,
-      "moyenne_duree_heures": 1.2,
-      "moyenne_gravite": 41.3,
-      "type_menace": "🟠 Scan de ports / Reconnaissance"
+    "2": {
+      "nom": "Scan de ports / Reconnaissance",
+      "nb_iocs": 1566,
+      "moy_longueur": 14.32,
+      "moy_entropie": 2.6116,
+      "exemples": [
+        "IP:0.0.0.0/8",
+        "IP:1.10.16.0/20",
+        "IP:1.19.0.0/16"
+      ]
     },
-    {
-      "cluster_id": 3,
-      "nb_menaces": 41,
-      "moyenne_connexions": 32.9,
-      "moyenne_ports": 9.6,
-      "moyenne_duree_heures": 9.8,
-      "moyenne_gravite": 72.8,
-      "type_menace": "🟡 Malware persistant / APT"
+    "3": {
+      "nom": "Hash malveillant / Malware",
+      "nb_iocs": 13,
+      "moy_longueur": 34.69,
+      "moy_entropie": 3.7227,
+      "exemples": [
+        "DOM:dismissedNotifications.replace",
+        "DOM:spear4h2potiyk43oilufhuq2jqbioyaizcs7xttlyw75s5ykwxpxlid.onion",
+        "DOM:document.documentElement.scrollHeight"
+      ]
     }
-  ]
+  }
 }
