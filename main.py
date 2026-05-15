@@ -50,3 +50,9 @@ print("\n[10/10] Stockage SQLite...")
 exec(open("stockage_sqlite.py", encoding="utf-8").read())
 
 print("\n=== SYSTEME EXECUTE AVEC SUCCES ===")
+
+print("\n[4b/10] N-sigma avec moyenne mobile...")
+exec(open("detection_anomalies_mobile.py", encoding="utf-8").read())
+
+print("\n[4c/10] Isolation Forest + Extended Isolation Forest...")
+exec(open("isolation_forest.py", encoding="utf-8").read())

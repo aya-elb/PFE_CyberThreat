@@ -1,0 +1,49 @@
+{
+  "date_analyse": "2026-05-15 11:23:19",
+  "source_donnees": "scraped_all.json (donnees reelles collectees)",
+  "total_iocs": 4483,
+  "isolation_forest_standard": {
+    "n_estimators": 100,
+    "contamination": 0.05,
+    "nb_anomalies": 223,
+    "pourcentage": 4.97,
+    "exemples": [
+      "IP:0.0.0.0/8",
+      "IP:1.10.16.0/20",
+      "IP:1.19.0.0/16",
+      "IP:2.58.56.0/24",
+      "IP:5.42.92.0/24",
+      "IP:10.0.0.0/8",
+      "IP:36.0.8.0/21",
+      "IP:42.0.32.0/19",
+      "IP:45.3.62.0/24",
+      "IP:45.9.168.0/24"
+    ]
+  },
+  "extended_isolation_forest": {
+    "n_estimators": 200,
+    "contamination": 0.05,
+    "max_features": 0.8,
+    "nb_anomalies": 217,
+    "pourcentage": 4.84,
+    "gain_detection": 17,
+    "exemples": [
+      "IP:0.0.0.0/8",
+      "IP:1.10.16.0/20",
+      "IP:1.19.0.0/16",
+      "IP:2.58.56.0/24",
+      "IP:5.42.92.0/24",
+      "IP:10.0.0.0/8",
+      "IP:36.0.8.0/21",
+      "IP:42.0.32.0/19",
+      "IP:43.242.4.0/22",
+      "IP:45.3.62.0/24"
+    ]
+  },
+  "comparaison": {
+    "IF_anomalies": 223,
+    "EIF_anomalies": 217,
+    "uniquement_EIF": 17,
+    "conclusion": "L'EIF detecte davantage d'anomalies grace aux coupures obliques aleatoires"
+  }
+}

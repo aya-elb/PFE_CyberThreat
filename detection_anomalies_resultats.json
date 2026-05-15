@@ -1,5 +1,5 @@
 {
-  "date_analyse": "2026-05-12 18:47:06",
+  "date_analyse": "2026-05-15 11:22:52",
   "source_donnees": "scraped_all.json (donnees reelles collectees)",
   "methode": "Z-score sur longueur des IOCs (IPs, plages CIDR, domaines, hashs)",
   "total_iocs": 4483,
