@@ -1,323 +1,1238 @@
 {
-  "date_analyse": "2026-05-15 11:22:52",
+  "date_analyse": "2026-06-08 13:16:01",
   "source_donnees": "scraped_all.json (donnees reelles collectees)",
   "methode": "Z-score sur longueur des IOCs (IPs, plages CIDR, domaines, hashs)",
-  "total_iocs": 4483,
-  "moyenne_longueur": 14.74,
-  "ecart_type": 1.61,
+  "total_iocs": 9318,
+  "moyenne_longueur": 17.35,
+  "ecart_type": 6.11,
   "seuil_zscore": 2.5,
-  "nb_anomalies": 62,
-  "pourcentage": 1.38,
+  "nb_anomalies": 245,
+  "pourcentage": 2.63,
   "anomalies": [
     {
-      "ioc": "IP:0.0.0.0/8",
-      "longueur": 9,
-      "z_score": 3.5733
+      "ioc": "DOM:365-secureaccountauthentication.com",
+      "longueur": 35,
+      "z_score": 2.889
     },
     {
-      "ioc": "IP:10.0.0.0/8",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:365online-authenticateaccountsecurity.com",
+      "longueur": 41,
+      "z_score": 3.8713
     },
     {
-      "ioc": "DOM:dismissedNotifications.replace",
-      "longueur": 30,
-      "z_score": 9.5025
+      "ioc": "DOM:5figq755l7c55eopjphypkpfj5b4ap5nm6rvie2tygcwtafbjhv3p3idgoogle.com",
+      "longueur": 66,
+      "z_score": 7.9642
     },
     {
-      "ioc": "DOM:awards.php",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:access-payee-cancellation-help.com",
+      "longueur": 34,
+      "z_score": 2.7253
     },
     {
-      "ioc": "DOM:fonts.css",
-      "longueur": 9,
-      "z_score": 3.5733
+      "ioc": "DOM:account-page-recovery-process.com",
+      "longueur": 33,
+      "z_score": 2.5616
     },
     {
-      "ioc": "DOM:xhtml1-transitional.dtd",
-      "longueur": 23,
-      "z_score": 5.1439
+      "ioc": "DOM:accountpaypalverificationonlinesecurity.com",
+      "longueur": 43,
+      "z_score": 4.1987
     },
     {
-      "ioc": "DOM:thread.js",
-      "longueur": 9,
-      "z_score": 3.5733
+      "ioc": "DOM:accountpaypalverificationonlinesecurity.net",
+      "longueur": 43,
+      "z_score": 4.1987
     },
     {
-      "ioc": "DOM:jquery.plugins.min.js",
-      "longueur": 21,
-      "z_score": 3.8986
+      "ioc": "DOM:acikdenizv2denizbank-basvurulari.com",
+      "longueur": 36,
+      "z_score": 3.0527
     },
     {
-      "ioc": "DOM:purple.gif",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:all-second-and-third-economic-impact-payments.com",
+      "longueur": 49,
+      "z_score": 5.181
     },
     {
-      "ioc": "DOM:spear.cx",
-      "longueur": 8,
-      "z_score": 4.1959
+      "ioc": "DOM:amazon-account-new-signin-id125021.com",
+      "longueur": 38,
+      "z_score": 3.3802
     },
     {
-      "ioc": "DOM:task.php",
-      "longueur": 8,
-      "z_score": 4.1959
+      "ioc": "DOM:amazon-notification-services-91251.com",
+      "longueur": 38,
+      "z_score": 3.3802
     },
     {
-      "ioc": "DOM:jquery.js",
-      "longueur": 9,
-      "z_score": 3.5733
+      "ioc": "DOM:amazon-problems-account-125911.com",
+      "longueur": 34,
+      "z_score": 2.7253
     },
     {
-      "ioc": "DOM:document.cookie.split",
-      "longueur": 21,
-      "z_score": 3.8986
+      "ioc": "DOM:amazon-problems-account-52412.com",
+      "longueur": 33,
+      "z_score": 2.5616
     },
     {
-      "ioc": "DOM:774k.csv",
-      "longueur": 8,
-      "z_score": 4.1959
+      "ioc": "DOM:amazon-problems-help-center-12951.com",
+      "longueur": 37,
+      "z_score": 3.2165
     },
     {
-      "ioc": "DOM:global.css",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:amazon-services-account-09121.com",
+      "longueur": 33,
+      "z_score": 2.5616
     },
     {
-      "ioc": "DOM:bam.css",
-      "longueur": 7,
-      "z_score": 4.8186
+      "ioc": "DOM:amazon-services-account-09122.com",
+      "longueur": 33,
+      "z_score": 2.5616
     },
     {
-      "ioc": "DOM:member.png",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:amazon-verification-help-center-9238.com",
+      "longueur": 40,
+      "z_score": 3.7076
     },
     {
-      "ioc": "DOM:member.php",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:apl.gmlockappcbmailsecureamazon.com",
+      "longueur": 35,
+      "z_score": 2.889
     },
     {
-      "ioc": "DOM:forum-23-page-3.html",
-      "longueur": 20,
-      "z_score": 3.2759
+      "ioc": "DOM:app-irs-gov.get-payment-assistance-recovery.com",
+      "longueur": 47,
+      "z_score": 4.8536
     },
     {
-      "ioc": "DOM:Spear.png",
-      "longueur": 9,
-      "z_score": 3.5733
+      "ioc": "DOM:app-irs-gov.us-get-payment-recovery.com",
+      "longueur": 39,
+      "z_score": 3.5439
     },
     {
-      "ioc": "DOM:rep.css",
-      "longueur": 7,
-      "z_score": 4.8186
+      "ioc": "DOM:apple-internal-online-support.com",
+      "longueur": 33,
+      "z_score": 2.5616
     },
     {
-      "ioc": "DOM:index.php",
-      "longueur": 9,
-      "z_score": 3.5733
+      "ioc": "DOM:apps-lntlwebsecureamzverifyupdate.com",
+      "longueur": 37,
+      "z_score": 3.2165
     },
     {
-      "ioc": "DOM:spear4h2potiyk43oilufhuq2jqbioyaizcs7xttlyw75s5ykwxpxlid.onion",
+      "ioc": "DOM:auchtionpreupdatecustomers.online",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:authenticate-unrecognised-payee.com",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:basvurularacikdenizv2denizbank.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:bireysel-acikdenizv2denizbank.com",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:bireyselsube-acikdenizv2denizbank.com",
+      "longueur": 37,
+      "z_score": 3.2165
+    },
+    {
+      "ioc": "DOM:business-violation-guidelines.support",
+      "longueur": 37,
+      "z_score": 3.2165
+    },
+    {
+      "ioc": "DOM:chase-founmail-visitormail-infor.com",
+      "longueur": 36,
+      "z_score": 3.0527
+    },
+    {
+      "ioc": "DOM:chase-informations-mailservcices.com",
+      "longueur": 36,
+      "z_score": 3.0527
+    },
+    {
+      "ioc": "DOM:chase001securesecuritydashbord.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:claim-payment.irs.gov.trxid.cloudns.ph",
+      "longueur": 38,
+      "z_score": 3.3802
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593021.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593022.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593023.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593024.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593025.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593026.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593021.com",
       "longueur": 62,
-      "z_score": 29.4274
+      "z_score": 7.3093
     },
     {
-      "ioc": "DOM:sad.png",
-      "longueur": 7,
-      "z_score": 4.8186
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593022.com",
+      "longueur": 62,
+      "z_score": 7.3093
     },
     {
-      "ioc": "DOM:mkc.css",
-      "longueur": 7,
-      "z_score": 4.8186
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593023.com",
+      "longueur": 62,
+      "z_score": 7.3093
     },
     {
-      "ioc": "DOM:custom.css",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593024.com",
+      "longueur": 62,
+      "z_score": 7.3093
     },
     {
-      "ioc": "DOM:alerts.css",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593025.com",
+      "longueur": 62,
+      "z_score": 7.3093
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593026.com",
+      "longueur": 62,
+      "z_score": 7.3093
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593027.com",
+      "longueur": 62,
+      "z_score": 7.3093
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593028.com",
+      "longueur": 62,
+      "z_score": 7.3093
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593029.com",
+      "longueur": 62,
+      "z_score": 7.3093
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u378745536548593024.com",
+      "longueur": 61,
+      "z_score": 7.1456
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u378745536548593025.com",
+      "longueur": 61,
+      "z_score": 7.1456
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u378745536548593026.com",
+      "longueur": 61,
+      "z_score": 7.1456
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u37887147148593021.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u37887147148593022.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u37887147148593023.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:com-verify-63248a774127e99654671o34434u37887147148593024.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:com-verify-6l48a7749654671o34434u3788714712548593025.com",
+      "longueur": 56,
+      "z_score": 6.327
+    },
+    {
+      "ioc": "DOM:com-verify-6l48a7749654671o34434u3788714712548593026.com",
+      "longueur": 56,
+      "z_score": 6.327
+    },
+    {
+      "ioc": "DOM:complete-status.govert-internal.net",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:completeinformationsucses.securedacc-support.info",
+      "longueur": 49,
+      "z_score": 5.181
+    },
+    {
+      "ioc": "DOM:completeyouracsesinfo.01reyztx-payment.xyz",
+      "longueur": 42,
+      "z_score": 4.035
+    },
+    {
+      "ioc": "DOM:customerservicepaymentsaccounts.info",
+      "longueur": 36,
+      "z_score": 3.0527
+    },
+    {
+      "ioc": "DOM:customerupdatebillingaccounts.biz",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:de-sparkasse-tangenehmigung-03.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:de-sparkasse-tangenehmigung-04.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:de-sparkasse-tangenehmigung-05.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:de-sparkasse-tangenehmigung-06.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:de-sparkasse-tangenehmigung-07.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:de-sparkasse-tangenehmigung-08.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:de-sparkasse-tangenehmigung-09.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:deliveryplatform-account-id523486.xyz",
+      "longueur": 37,
+      "z_score": 3.2165
+    },
+    {
+      "ioc": "DOM:directaction.irs-submitidentity.com",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:discord-application-moderators.xyz",
+      "longueur": 34,
+      "z_score": 2.7253
     },
     {
       "ioc": "DOM:document.documentElement.scrollHeight",
       "longueur": 37,
-      "z_score": 13.861
-    },
-    {
-      "ioc": "DOM:www.w3.org",
-      "longueur": 10,
-      "z_score": 2.9506
-    },
-    {
-      "ioc": "DOM:tabbed.css",
-      "longueur": 10,
-      "z_score": 2.9506
-    },
-    {
-      "ioc": "DOM:mod.css",
-      "longueur": 7,
-      "z_score": 4.8186
-    },
-    {
-      "ioc": "DOM:icon.css",
-      "longueur": 8,
-      "z_score": 4.1959
-    },
-    {
-      "ioc": "DOM:csc.gif",
-      "longueur": 7,
-      "z_score": 4.8186
-    },
-    {
-      "ioc": "DOM:thankyoulike.min.js",
-      "longueur": 19,
-      "z_score": 2.6533
-    },
-    {
-      "ioc": "DOM:search.php",
-      "longueur": 10,
-      "z_score": 2.9506
-    },
-    {
-      "ioc": "DOM:css3.css",
-      "longueur": 8,
-      "z_score": 4.1959
+      "z_score": 3.2165
     },
     {
       "ioc": "DOM:document.documentElement.scrollTop",
       "longueur": 34,
-      "z_score": 11.9931
+      "z_score": 2.7253
     },
     {
-      "ioc": "DOM:report.js",
-      "longueur": 9,
-      "z_score": 3.5733
+      "ioc": "DOM:domainaccess-payee-cancel-help.com",
+      "longueur": 34,
+      "z_score": 2.7253
     },
     {
-      "ioc": "DOM:general.js",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:domainamefwseoirgamazongegweaofseg.xyz",
+      "longueur": 38,
+      "z_score": 3.3802
     },
     {
-      "ioc": "DOM:donate.css",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:domainaramexshipments-verifying.com",
+      "longueur": 35,
+      "z_score": 2.889
     },
     {
-      "ioc": "DOM:forum-23-page-8.html",
-      "longueur": 20,
-      "z_score": 3.2759
+      "ioc": "DOM:domainauthentification-amazon.com",
+      "longueur": 33,
+      "z_score": 2.5616
     },
     {
-      "ioc": "DOM:t.me",
-      "longueur": 4,
-      "z_score": 6.6866
+      "ioc": "DOM:domaincom-verify-6l48a7749654671o34434u3788714712548593024.com",
+      "longueur": 62,
+      "z_score": 7.3093
     },
     {
-      "ioc": "DOM:css.css",
-      "longueur": 7,
-      "z_score": 4.8186
+      "ioc": "DOM:domaindevelopers-discord-intents.com",
+      "longueur": 36,
+      "z_score": 3.0527
     },
     {
-      "ioc": "DOM:misc.php",
-      "longueur": 8,
-      "z_score": 4.1959
+      "ioc": "DOM:domainformularyhypesquadevents.com",
+      "longueur": 34,
+      "z_score": 2.7253
     },
     {
-      "ioc": "DOM:forum-23-page-2.html",
-      "longueur": 20,
-      "z_score": 3.2759
+      "ioc": "DOM:domainformularys-moderatorsacademy.com",
+      "longueur": 38,
+      "z_score": 3.3802
     },
     {
-      "ioc": "DOM:lifeofadesigner.com",
-      "longueur": 19,
-      "z_score": 2.6533
+      "ioc": "DOM:domaingov-get-my-economic-impact-payment-submission.com",
+      "longueur": 55,
+      "z_score": 6.1633
     },
     {
-      "ioc": "DOM:css.php",
-      "longueur": 7,
-      "z_score": 4.8186
+      "ioc": "DOM:domaininstagram-infringement.online",
+      "longueur": 35,
+      "z_score": 2.889
     },
     {
-      "ioc": "DOM:Spear.cx",
-      "longueur": 8,
-      "z_score": 4.1959
+      "ioc": "DOM:domainlogin-academy-formulary.com",
+      "longueur": 33,
+      "z_score": 2.5616
     },
     {
-      "ioc": "DOM:forum-23-page-4.html",
-      "longueur": 20,
-      "z_score": 3.2759
+      "ioc": "DOM:domainlogin-moderator-academy.com",
+      "longueur": 33,
+      "z_score": 2.5616
     },
     {
-      "ioc": "DOM:myadvertisements.js",
-      "longueur": 19,
-      "z_score": 2.6533
+      "ioc": "DOM:domainlycamobile-verifyidentify.com",
+      "longueur": 35,
+      "z_score": 2.889
     },
     {
-      "ioc": "DOM:forum-23-page-5.html",
-      "longueur": 20,
-      "z_score": 3.2759
+      "ioc": "DOM:domainmanage-payee-cancellation-help.com",
+      "longueur": 40,
+      "z_score": 3.7076
     },
     {
-      "ioc": "DOM:onyx.css",
-      "longueur": 8,
-      "z_score": 4.1959
+      "ioc": "DOM:domainnl-loginmijnaccount.business",
+      "longueur": 34,
+      "z_score": 2.7253
     },
     {
-      "ioc": "DOM:canary.txt",
-      "longueur": 10,
-      "z_score": 2.9506
+      "ioc": "DOM:domainonlinesupportaibsecurity-update.com",
+      "longueur": 41,
+      "z_score": 3.8713
     },
     {
-      "ioc": "HASH:3adab5c8221812cac25d9b8e9b1c45eb",
-      "longueur": 32,
-      "z_score": 10.7478
+      "ioc": "DOM:domainregister-discord-academy.com",
+      "longueur": 34,
+      "z_score": 2.7253
     },
     {
-      "ioc": "HASH:023a251bba97d9c9cf870774e28b2bd3",
-      "longueur": 32,
-      "z_score": 10.7478
+      "ioc": "DOM:domainregisterdiscord-academy.com",
+      "longueur": 33,
+      "z_score": 2.5616
     },
     {
-      "ioc": "HASH:8d041c8a5169644ec7d887d5be3364de",
-      "longueur": 32,
-      "z_score": 10.7478
+      "ioc": "DOM:domainsparkasse-authentifizierungdienst.com",
+      "longueur": 43,
+      "z_score": 4.1987
     },
     {
-      "ioc": "HASH:eecd5663fc178327e8faa99323c9ade3",
-      "longueur": 32,
-      "z_score": 10.7478
+      "ioc": "DOM:domainupdatesecurities-detailsone-mtbinu.xyz",
+      "longueur": 44,
+      "z_score": 4.3625
     },
     {
-      "ioc": "HASH:09df81a60a6269ce03f1f271bcbda3ee",
-      "longueur": 32,
-      "z_score": 10.7478
+      "ioc": "DOM:domainvehicles-program-purchase-protection.com",
+      "longueur": 46,
+      "z_score": 4.6899
     },
     {
-      "ioc": "HASH:8fffcb90dbc69c296be5dfecbeb998b7",
-      "longueur": 32,
-      "z_score": 10.7478
+      "ioc": "DOM:domainverify-payee-reversal-help.com",
+      "longueur": 36,
+      "z_score": 3.0527
     },
     {
-      "ioc": "HASH:aab5dcc23b16e05357780d6bdc5330df",
-      "longueur": 32,
-      "z_score": 10.7478
+      "ioc": "DOM:extradigitalmoneylnferbankcash.site",
+      "longueur": 35,
+      "z_score": 2.889
     },
     {
-      "ioc": "HASH:89e81a5c61185325958f541ea7ce1ab5",
-      "longueur": 32,
-      "z_score": 10.7478
+      "ioc": "DOM:facebooklivesocialmediacompanies.com",
+      "longueur": 36,
+      "z_score": 3.0527
     },
     {
-      "ioc": "HASH:3580ce314867d2c9f09fc18b79a6f003",
-      "longueur": 32,
-      "z_score": 10.7478
+      "ioc": "DOM:getrefund.irs.gov-addpayment.info",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:gov-economic-impact-payment-coronavirus.com",
+      "longueur": 43,
+      "z_score": 4.1987
+    },
+    {
+      "ioc": "DOM:gov-get-my-economic-impact-payment-of-corona-virus.com",
+      "longueur": 54,
+      "z_score": 5.9996
+    },
+    {
+      "ioc": "DOM:gov-get-my-payment-impact-coronavirus-pandemic.com",
+      "longueur": 50,
+      "z_score": 5.3447
+    },
+    {
+      "ioc": "DOM:gov-us-economic-impact-payment-corona-virus.com",
+      "longueur": 47,
+      "z_score": 4.8536
+    },
+    {
+      "ioc": "DOM:gov-us-economic-impact-payment-coronavirus.online",
+      "longueur": 49,
+      "z_score": 5.181
+    },
+    {
+      "ioc": "DOM:hobby-business-trip-home-delivery-purchase.site",
+      "longueur": 47,
+      "z_score": 4.8536
+    },
+    {
+      "ioc": "DOM:https-2022-validierung-online.xyz",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:https-aktualisieurngs-service-online.xyz",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:https-amzn-validierungs-service.xyz",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:https-validerungs-service-online.xyz",
+      "longueur": 36,
+      "z_score": 3.0527
+    },
+    {
+      "ioc": "DOM:httpsbabygsmommyandmemyshopifycomadminsettingsdomains.com",
+      "longueur": 57,
+      "z_score": 6.4907
+    },
+    {
+      "ioc": "DOM:httpssystemsecurity-365online.com",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:httpswwwwww2641gatelydrw1002.info",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:internet-banking-caixaeconomica.com",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:intlcorexapps-ppcamzsecurewebverifyinformation.com",
+      "longueur": 50,
+      "z_score": 5.3447
+    },
+    {
+      "ioc": "DOM:irs-gov.coronavirus-tax-relief-and-economic-impact-payments.com",
+      "longueur": 63,
+      "z_score": 7.473
+    },
+    {
+      "ioc": "DOM:irs-gov.update-your-payment-details.com",
+      "longueur": 39,
+      "z_score": 3.5439
+    },
+    {
+      "ioc": "DOM:irs-gov.us-coronavirus-tax-relief-impact.com",
+      "longueur": 44,
+      "z_score": 4.3625
+    },
+    {
+      "ioc": "DOM:irs-gov.us-coronavirus-tax-relief-in-disaster-situations.com",
+      "longueur": 60,
+      "z_score": 6.9819
+    },
+    {
+      "ioc": "DOM:irs-gov.us-economic-impact-payment-funds.com",
+      "longueur": 44,
+      "z_score": 4.3625
+    },
+    {
+      "ioc": "DOM:irs-gov.us-get-funds-assistance.com",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:irs-gov.us-get-funds-coronavirus-economic-impact.com",
+      "longueur": 52,
+      "z_score": 5.6722
+    },
+    {
+      "ioc": "DOM:irs-gov.us-get-payment-submission.com",
+      "longueur": 37,
+      "z_score": 3.2165
+    },
+    {
+      "ioc": "DOM:irs-gov.us-tax-relief-in-disaster-situations.com",
+      "longueur": 48,
+      "z_score": 5.0173
+    },
+    {
+      "ioc": "DOM:irs-informationsubmitinfo.ge-information.xyz",
+      "longueur": 44,
+      "z_score": 4.3625
+    },
+    {
+      "ioc": "DOM:irs-taxxdeptreffundprocess.taxxtermsreffund01.net",
+      "longueur": 49,
+      "z_score": 5.181
+    },
+    {
+      "ioc": "DOM:irs.claim-tax.pkbmngudikapinteran.sch.id",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:irs.gov-coronavirus-pandemic-tax-refund-submission.com",
+      "longueur": 54,
+      "z_score": 5.9996
+    },
+    {
+      "ioc": "DOM:irs.gov-my-tax-refund-submission.com",
+      "longueur": 36,
+      "z_score": 3.0527
+    },
+    {
+      "ioc": "DOM:irs.gov-tax-refund-submission.com",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:irs.gov-us-economic-impact-payment-coronavirus.com",
+      "longueur": 50,
+      "z_score": 5.3447
+    },
+    {
+      "ioc": "DOM:irs.payment-return.tax.smpbonavita.my.id",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:irs.profile-claimtax19-onlineus.com",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:jp.rnercariei.loginjg0fghf84.dpek.cn",
+      "longueur": 36,
+      "z_score": 3.0527
+    },
+    {
+      "ioc": "DOM:jp.rnercariei.loginjg0fghf84fd7.dazin.cn",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:jp.rrnercari.jpsinginsdfgd8dhgs6dff.cyre.cn",
+      "longueur": 43,
+      "z_score": 4.1987
+    },
+    {
+      "ioc": "DOM:latestnews.pricesrakutenlogin.xyz",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:mail.account-locked.amazon.com.give-satisfaction.info",
+      "longueur": 53,
+      "z_score": 5.8359
+    },
+    {
+      "ioc": "DOM:mail.gov-taxid.completofyours.info",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:metamask-verificationprotocol.com",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:mypostoffice-parcel-redelivery.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:netflix-mon-espace-facturation.fr",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:newcustomerconfirmationsupports.online",
+      "longueur": 38,
+      "z_score": 3.3802
+    },
+    {
+      "ioc": "DOM:notabletorakutencardloginmail.xyz",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:online-citi-secure-panel-secure-recovery.com",
+      "longueur": 44,
+      "z_score": 4.3625
+    },
+    {
+      "ioc": "DOM:onlinebanking.security-new-payee.com",
+      "longueur": 36,
+      "z_score": 3.0527
+    },
+    {
+      "ioc": "DOM:post-office-parcel-reschedule-delivery.com",
+      "longueur": 42,
+      "z_score": 4.035
+    },
+    {
+      "ioc": "DOM:postoffice-redeliveries-support.com",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:rakutan.co.jploginffd9dfg7.carwork.cn",
+      "longueur": 37,
+      "z_score": 3.2165
+    },
+    {
+      "ioc": "DOM:rakutan.co.jploginffd9dfg7h.iotbaas.cn",
+      "longueur": 38,
+      "z_score": 3.3802
+    },
+    {
+      "ioc": "DOM:rakutan.co.jploginvcx8ds.nanoart.cn",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:rakutan.co.jploginvcx8dsa.nanonews.cn",
+      "longueur": 37,
+      "z_score": 3.2165
+    },
+    {
+      "ioc": "DOM:reglementation-informations-login.com",
+      "longueur": 37,
+      "z_score": 3.2165
+    },
+    {
+      "ioc": "DOM:reglementation1-informations-login.com",
+      "longueur": 38,
+      "z_score": 3.3802
+    },
+    {
+      "ioc": "DOM:safeaccess.irs.gov-portalpay.info",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:samsungvendorcallcentrewadala.xyz",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:scured-payment.irs.gov.caseserv.cloudns.ph",
+      "longueur": 42,
+      "z_score": 4.035
+    },
+    {
+      "ioc": "DOM:secure-wellsfargo-verfication.com",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:signin-accountwebbappservices.com",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:signin-requiredupdateinformationamz.com",
+      "longueur": 39,
+      "z_score": 3.5439
+    },
+    {
+      "ioc": "DOM:signinpaypals-restrictedaccounts.com",
+      "longueur": 36,
+      "z_score": 3.0527
+    },
+    {
+      "ioc": "DOM:spear4h2potiyk43oilufhuq2jqbioyaizcs7xttlyw75s5ykwxpxlid.onion",
+      "longueur": 62,
+      "z_score": 7.3093
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-axhzl.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-azgsk.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-bvfnt.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-csifj.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-doeif.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-dxjin.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-dzeay.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-eoniq.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-esbzs.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-flguu.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-flrjz.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-fnoqg.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-fubfk.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-howmx.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-hqmnl.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-jkoir.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-jrmqm.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-jvrgo.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-liapn.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-liglm.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-lvxca.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-mdbbf.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-mwpon.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-ogupr.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-ouenz.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-pkvhg.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-puxgo.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-pwvfh.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-qxadh.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-raici.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-rmdsz.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-rqsyi.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-sdzbs.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-sqlqo.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-sqpux.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-srnye.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-ubfqo.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-uovmh.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-uoxoi.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-uvdek.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-vubpc.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-wudlq.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-xnswj.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-xtxap.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-xzzjs.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-yrcub.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-yyyrb.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-zckku.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-zkjfe.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:statement-updatecode-educated-zwjmk.info",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:submitdata.irs.extendsubscription.info",
+      "longueur": 38,
+      "z_score": 3.3802
+    },
+    {
+      "ioc": "DOM:submitdata.irs.gov-customersupport.info",
+      "longueur": 39,
+      "z_score": 3.5439
+    },
+    {
+      "ioc": "DOM:thelatestnews.pricesrakutenlogin.xyz",
+      "longueur": 36,
+      "z_score": 3.0527
+    },
+    {
+      "ioc": "DOM:thenorthshoredolepineappletour.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:trniuen-norteitperz.tycerianz.shop",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:tweedehands-betaalplatform.online",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:update-profile-account9239323.com",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:us-economic-impact-payments.online",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:us-lang-irs.gov-claim-recovery-rebate-credit.com",
+      "longueur": 48,
+      "z_score": 5.0173
+    },
+    {
+      "ioc": "DOM:verifyinformation-appsxsecuredns739.com",
+      "longueur": 39,
+      "z_score": 3.5439
+    },
+    {
+      "ioc": "DOM:verizonsmallbusinessessentals.com",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:verizonsmallbusinessesssentials.com",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:verizonsmallbusinesssessentials.com",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:verizonsmallbusnessessentials.com",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:verizonsmalllbusinessessentials.com",
+      "longueur": 35,
+      "z_score": 2.889
+    },
+    {
+      "ioc": "DOM:verizonsnallbusinessessentials.com",
+      "longueur": 34,
+      "z_score": 2.7253
+    },
+    {
+      "ioc": "DOM:veryfed-accountend-helping-formsed.com",
+      "longueur": 38,
+      "z_score": 3.3802
+    },
+    {
+      "ioc": "DOM:vvellsfargos8i76yth5yerth.website",
+      "longueur": 33,
+      "z_score": 2.5616
+    },
+    {
+      "ioc": "DOM:web-serviceappverifyaccountservc.com",
+      "longueur": 36,
+      "z_score": 3.0527
+    },
+    {
+      "ioc": "DOM:webb-app-irs-gov.us-tax-relief-economic-impact-coronavirus.com",
+      "longueur": 62,
+      "z_score": 7.3093
+    },
+    {
+      "ioc": "DOM:webb-irs-gov-us.third-payment-assistance-funds.com",
+      "longueur": 50,
+      "z_score": 5.3447
+    },
+    {
+      "ioc": "DOM:winxeerror9854353-help-24x7support03.online",
+      "longueur": 43,
+      "z_score": 4.1987
+    },
+    {
+      "ioc": "DOM:www1.bigsmeil-etc.jpsingincxf9d6ds4fgt.majon.cn",
+      "longueur": 47,
+      "z_score": 4.8536
+    },
+    {
+      "ioc": "DOM:www2.bigsmeil-etc.jpsingincxf9d6ds4fgt.majon.cn",
+      "longueur": 47,
+      "z_score": 4.8536
+    },
+    {
+      "ioc": "DOM:www2.jp.rrnercari.jpsinginsdfgd8dhgs6dff.cyre.cn",
+      "longueur": 48,
+      "z_score": 5.0173
+    },
+    {
+      "ioc": "DOM:www2.rakutan.co.jploginffd9dfg7.carwork.cn",
+      "longueur": 42,
+      "z_score": 4.035
+    },
+    {
+      "ioc": "DOM:www2.rakutan.co.jploginffd9dfg7h.iotbaas.cn",
+      "longueur": 43,
+      "z_score": 4.1987
+    },
+    {
+      "ioc": "DOM:www2.rakutan.co.jploginvcx8ds.nanoart.cn",
+      "longueur": 40,
+      "z_score": 3.7076
+    },
+    {
+      "ioc": "DOM:www2.rakutan.co.jploginvcx8dsa.nanonews.cn",
+      "longueur": 42,
+      "z_score": 4.035
+    },
+    {
+      "ioc": "DOM:www2.samllsmeil-etc.jpsingincxf9d6ds4fgt.majon.cn",
+      "longueur": 49,
+      "z_score": 5.181
+    },
+    {
+      "ioc": "DOM:www3.bigsmeil-etc.jpsingincxf9d6ds4fgt.majon.cn",
+      "longueur": 47,
+      "z_score": 4.8536
+    },
+    {
+      "ioc": "DOM:www3.jp.rnercariei.loginjg0fghf84.dpek.cn",
+      "longueur": 41,
+      "z_score": 3.8713
+    },
+    {
+      "ioc": "DOM:www3.jp.rnercariei.loginjg0fghf84fd7.dazin.cn",
+      "longueur": 45,
+      "z_score": 4.5262
+    },
+    {
+      "ioc": "DOM:www4.bigsmeil-etc.jpsingincxf9d6ds4fgt.majon.cn",
+      "longueur": 47,
+      "z_score": 4.8536
+    },
+    {
+      "ioc": "HASH:efa413e1ccc0ad52a63160ed30cea75eb251faacbbb8bc6b10dcaa9a5bbf01c8",
+      "longueur": 64,
+      "z_score": 7.6367
     }
   ]
 }

@@ -1,59 +1,23 @@
 {
-  "date_analyse": "2026-05-15 11:23:16",
+  "date_analyse": "2026-06-08 13:17:39",
   "source_donnees": "scraped_all.json (donnees reelles)",
   "methode": "N-sigma avec moyenne mobile glissante",
   "fenetre": 50,
   "seuil_n_sigma": 2.5,
-  "total_iocs": 4483,
-  "nb_anomalies": 106,
-  "pourcentage": 2.36,
+  "total_iocs": 9318,
+  "nb_anomalies": 252,
+  "pourcentage": 2.7,
   "anomalies": [
     {
-      "ioc": "IP:36.0.8.0/21",
-      "longueur": 11
-    },
-    {
-      "ioc": "IP:45.3.62.0/24",
-      "longueur": 12
-    },
-    {
-      "ioc": "IP:50.16.16.211",
-      "longueur": 12
-    },
-    {
-      "ioc": "IP:57.14.0.0/15",
-      "longueur": 12
-    },
-    {
-      "ioc": "IP:57.37.0.0/16",
-      "longueur": 12
-    },
-    {
-      "ioc": "IP:58.2.0.0/17",
-      "longueur": 11
-    },
-    {
-      "ioc": "IP:89.34.0.0/24",
-      "longueur": 12
-    },
-    {
-      "ioc": "IP:89.34.4.0/24",
-      "longueur": 12
-    },
-    {
-      "ioc": "IP:101.203.128.0/19",
-      "longueur": 16
-    },
-    {
-      "ioc": "IP:103.97.2.0/24",
-      "longueur": 13
-    },
-    {
-      "ioc": "IP:103.138.6.0/23",
+      "ioc": "IP:103.12.68.0/22",
       "longueur": 14
     },
     {
-      "ioc": "IP:103.166.2.0/24",
+      "ioc": "IP:103.12.70.0/23",
+      "longueur": 14
+    },
+    {
+      "ioc": "IP:103.15.44.0/22",
       "longueur": 14
     },
     {
@@ -69,11 +33,11 @@
       "longueur": 14
     },
     {
-      "ioc": "IP:103.180.8.0/23",
+      "ioc": "IP:103.184.4.0/22",
       "longueur": 14
     },
     {
-      "ioc": "IP:103.184.4.0/22",
+      "ioc": "IP:103.184.8.0/23",
       "longueur": 14
     },
     {
@@ -81,12 +45,48 @@
       "longueur": 14
     },
     {
-      "ioc": "IP:103.185.8.0/23",
+      "ioc": "IP:103.188.8.0/23",
       "longueur": 14
     },
     {
-      "ioc": "IP:103.194.84.0/22",
-      "longueur": 15
+      "ioc": "IP:103.198.4.0/22",
+      "longueur": 14
+    },
+    {
+      "ioc": "IP:103.20.58.0/23",
+      "longueur": 14
+    },
+    {
+      "ioc": "IP:103.20.58.0/24",
+      "longueur": 14
+    },
+    {
+      "ioc": "IP:103.20.72.0/22",
+      "longueur": 14
+    },
+    {
+      "ioc": "IP:103.24.0.0/22",
+      "longueur": 13
+    },
+    {
+      "ioc": "IP:103.32.0.0/16",
+      "longueur": 13
+    },
+    {
+      "ioc": "IP:103.34.0.0/16",
+      "longueur": 13
+    },
+    {
+      "ioc": "IP:103.5.8.0/22",
+      "longueur": 12
+    },
+    {
+      "ioc": "IP:103.97.2.0/24",
+      "longueur": 13
+    },
+    {
+      "ioc": "IP:127.0.0.0/8",
+      "longueur": 11
     }
   ]
 }

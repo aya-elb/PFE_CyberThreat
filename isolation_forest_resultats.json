@@ -1,49 +1,49 @@
 {
-  "date_analyse": "2026-05-15 11:23:19",
+  "date_analyse": "2026-06-08 13:17:47",
   "source_donnees": "scraped_all.json (donnees reelles collectees)",
-  "total_iocs": 4483,
+  "total_iocs": 9318,
   "isolation_forest_standard": {
     "n_estimators": 100,
     "contamination": 0.05,
-    "nb_anomalies": 223,
-    "pourcentage": 4.97,
+    "nb_anomalies": 466,
+    "pourcentage": 5.0,
     "exemples": [
       "IP:0.0.0.0/8",
       "IP:1.10.16.0/20",
       "IP:1.19.0.0/16",
-      "IP:2.58.56.0/24",
-      "IP:5.42.92.0/24",
       "IP:10.0.0.0/8",
-      "IP:36.0.8.0/21",
-      "IP:42.0.32.0/19",
-      "IP:45.3.62.0/24",
-      "IP:45.9.168.0/24"
+      "IP:100.64.0.0/10",
+      "IP:101.0.16.0/20",
+      "IP:101.1.16.0/20",
+      "IP:102.202.224.0/20",
+      "IP:102.202.240.0/21",
+      "IP:102.220.112.0/22"
     ]
   },
   "extended_isolation_forest": {
     "n_estimators": 200,
     "contamination": 0.05,
     "max_features": 0.8,
-    "nb_anomalies": 217,
-    "pourcentage": 4.84,
-    "gain_detection": 17,
+    "nb_anomalies": 466,
+    "pourcentage": 5.0,
+    "gain_detection": 65,
     "exemples": [
       "IP:0.0.0.0/8",
       "IP:1.10.16.0/20",
       "IP:1.19.0.0/16",
-      "IP:2.58.56.0/24",
-      "IP:5.42.92.0/24",
       "IP:10.0.0.0/8",
-      "IP:36.0.8.0/21",
-      "IP:42.0.32.0/19",
-      "IP:43.242.4.0/22",
-      "IP:45.3.62.0/24"
+      "IP:100.64.0.0/10",
+      "IP:102.220.112.0/22",
+      "IP:127.0.0.0/8",
+      "IP:161.0.0.0/19",
+      "IP:161.1.0.0/16",
+      "IP:161.60.0.0/16"
     ]
   },
   "comparaison": {
-    "IF_anomalies": 223,
-    "EIF_anomalies": 217,
-    "uniquement_EIF": 17,
+    "IF_anomalies": 466,
+    "EIF_anomalies": 466,
+    "uniquement_EIF": 65,
     "conclusion": "L'EIF detecte davantage d'anomalies grace aux coupures obliques aleatoires"
   }
 }

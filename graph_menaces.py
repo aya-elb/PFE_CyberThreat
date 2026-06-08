@@ -12,7 +12,7 @@ print("Relations : liens entre entites")
 
 # ------------------------------------------------------------------
 # 1. CHARGEMENT DES DONNEES REELLES
-# ------------------------------------------------------------------
+# ---------------------------------------------------- --------------
 print("\n[1/5] Chargement des donnees reelles...")
 
 with open("scraped_all.json", "r", encoding="utf-8") as f:

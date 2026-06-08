@@ -1,51 +1,51 @@
 {
-  "date_analyse": "2026-05-15 11:23:12",
+  "date_analyse": "2026-06-08 13:17:18",
   "source_donnees": "scraped_all.json (donnees reelles collectees)",
   "methode": "K-Means (k=4) sur features extraites des IOCs reels",
-  "total_iocs": 4483,
+  "total_iocs": 9318,
   "clusters": {
     "0": {
-      "nom": "Plage reseau blacklistee / DDoS",
-      "nb_iocs": 2819,
-      "moy_longueur": 14.95,
-      "moy_entropie": 2.9413,
+      "nom": "Domaine suspect / Phishing",
+      "nb_iocs": 2781,
+      "moy_longueur": 15.22,
+      "moy_entropie": 3.3825,
       "exemples": [
-        "IP:5.133.101.0/24",
-        "IP:5.183.60.0/22",
-        "IP:5.188.236.0/23"
+        "DOM:01reyztx-payment.xyz",
+        "DOM:02-update-auth.com",
+        "DOM:02reyztx-payment.xyz"
       ]
     },
     "1": {
-      "nom": "Domaine suspect / Phishing",
-      "nb_iocs": 85,
-      "moy_longueur": 12.31,
-      "moy_entropie": 3.112,
-      "exemples": [
-        "DOM:SpearProgram.png",
-        "DOM:awards.php",
-        "DOM:fonts.css"
-      ]
-    },
-    "2": {
-      "nom": "Scan de ports / Reconnaissance",
-      "nb_iocs": 1566,
-      "moy_longueur": 14.32,
-      "moy_entropie": 2.6116,
+      "nom": "Plage reseau blacklistee / DDoS",
+      "nb_iocs": 4642,
+      "moy_longueur": 14.73,
+      "moy_entropie": 2.8273,
       "exemples": [
         "IP:0.0.0.0/8",
         "IP:1.10.16.0/20",
         "IP:1.19.0.0/16"
       ]
     },
-    "3": {
-      "nom": "Hash malveillant / Malware",
-      "nb_iocs": 13,
-      "moy_longueur": 34.69,
-      "moy_entropie": 3.7227,
+    "2": {
+      "nom": "Scan de ports / Reconnaissance",
+      "nb_iocs": 1867,
+      "moy_longueur": 26.39,
+      "moy_entropie": 3.8551,
       "exemples": [
-        "DOM:dismissedNotifications.replace",
-        "DOM:spear4h2potiyk43oilufhuq2jqbioyaizcs7xttlyw75s5ykwxpxlid.onion",
-        "DOM:document.documentElement.scrollHeight"
+        "DOM:02pack-update-sim.com",
+        "DOM:03c3t0rbm09uqtnnre00703.com",
+        "DOM:03c3t0rjmk5qrtnpree1780.com"
+      ]
+    },
+    "3": {
+      "nom": "Scan de ports / Reconnaissance",
+      "nb_iocs": 28,
+      "moy_longueur": 60.96,
+      "moy_entropie": 4.1969,
+      "exemples": [
+        "DOM:5figq755l7c55eopjphypkpfj5b4ap5nm6rvie2tygcwtafbjhv3p3idgoogle.com",
+        "DOM:com-verify-63248a774127e9963214534434u378745536548593021.com",
+        "DOM:com-verify-63248a774127e9963214534434u378745536548593022.com"
       ]
     }
   }
