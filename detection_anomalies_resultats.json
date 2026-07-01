@@ -1,1238 +1,1238 @@
 {
-  "date_analyse": "2026-06-08 13:16:01",
+  "date_analyse": "2026-06-16 18:07:13",
   "source_donnees": "scraped_all.json (donnees reelles collectees)",
   "methode": "Z-score sur longueur des IOCs (IPs, plages CIDR, domaines, hashs)",
-  "total_iocs": 9318,
-  "moyenne_longueur": 17.35,
-  "ecart_type": 6.11,
+  "total_iocs": 9383,
+  "moyenne_longueur": 17.33,
+  "ecart_type": 6.09,
   "seuil_zscore": 2.5,
   "nb_anomalies": 245,
-  "pourcentage": 2.63,
+  "pourcentage": 2.61,
   "anomalies": [
     {
       "ioc": "DOM:365-secureaccountauthentication.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:365online-authenticateaccountsecurity.com",
       "longueur": 41,
-      "z_score": 3.8713
+      "z_score": 3.8848
     },
     {
       "ioc": "DOM:5figq755l7c55eopjphypkpfj5b4ap5nm6rvie2tygcwtafbjhv3p3idgoogle.com",
       "longueur": 66,
-      "z_score": 7.9642
+      "z_score": 7.9887
     },
     {
       "ioc": "DOM:access-payee-cancellation-help.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:account-page-recovery-process.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:accountpaypalverificationonlinesecurity.com",
       "longueur": 43,
-      "z_score": 4.1987
+      "z_score": 4.2131
     },
     {
       "ioc": "DOM:accountpaypalverificationonlinesecurity.net",
       "longueur": 43,
-      "z_score": 4.1987
+      "z_score": 4.2131
     },
     {
       "ioc": "DOM:acikdenizv2denizbank-basvurulari.com",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:all-second-and-third-economic-impact-payments.com",
       "longueur": 49,
-      "z_score": 5.181
+      "z_score": 5.1981
     },
     {
       "ioc": "DOM:amazon-account-new-signin-id125021.com",
       "longueur": 38,
-      "z_score": 3.3802
+      "z_score": 3.3923
     },
     {
       "ioc": "DOM:amazon-notification-services-91251.com",
       "longueur": 38,
-      "z_score": 3.3802
+      "z_score": 3.3923
     },
     {
       "ioc": "DOM:amazon-problems-account-125911.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:amazon-problems-account-52412.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:amazon-problems-help-center-12951.com",
       "longueur": 37,
-      "z_score": 3.2165
+      "z_score": 3.2282
     },
     {
       "ioc": "DOM:amazon-services-account-09121.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:amazon-services-account-09122.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:amazon-verification-help-center-9238.com",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:apl.gmlockappcbmailsecureamazon.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:app-irs-gov.get-payment-assistance-recovery.com",
       "longueur": 47,
-      "z_score": 4.8536
+      "z_score": 4.8698
     },
     {
       "ioc": "DOM:app-irs-gov.us-get-payment-recovery.com",
       "longueur": 39,
-      "z_score": 3.5439
+      "z_score": 3.5565
     },
     {
       "ioc": "DOM:apple-internal-online-support.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:apps-lntlwebsecureamzverifyupdate.com",
       "longueur": 37,
-      "z_score": 3.2165
+      "z_score": 3.2282
     },
     {
       "ioc": "DOM:auchtionpreupdatecustomers.online",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:authenticate-unrecognised-payee.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:basvurularacikdenizv2denizbank.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:bireysel-acikdenizv2denizbank.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:bireyselsube-acikdenizv2denizbank.com",
       "longueur": 37,
-      "z_score": 3.2165
+      "z_score": 3.2282
     },
     {
       "ioc": "DOM:business-violation-guidelines.support",
       "longueur": 37,
-      "z_score": 3.2165
+      "z_score": 3.2282
     },
     {
       "ioc": "DOM:chase-founmail-visitormail-infor.com",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:chase-informations-mailservcices.com",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:chase001securesecuritydashbord.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:claim-payment.irs.gov.trxid.cloudns.ph",
       "longueur": 38,
-      "z_score": 3.3802
+      "z_score": 3.3923
     },
     {
       "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593021.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593022.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593023.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593024.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593025.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:com-verify-63248a774127e9963214534434u378745536548593026.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593021.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593022.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593023.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593024.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593025.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593026.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593027.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593028.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u3781476412548593029.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u378745536548593024.com",
       "longueur": 61,
-      "z_score": 7.1456
+      "z_score": 7.168
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u378745536548593025.com",
       "longueur": 61,
-      "z_score": 7.1456
+      "z_score": 7.168
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u378745536548593026.com",
       "longueur": 61,
-      "z_score": 7.1456
+      "z_score": 7.168
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u37887147148593021.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u37887147148593022.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u37887147148593023.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:com-verify-63248a774127e99654671o34434u37887147148593024.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:com-verify-6l48a7749654671o34434u3788714712548593025.com",
       "longueur": 56,
-      "z_score": 6.327
+      "z_score": 6.3472
     },
     {
       "ioc": "DOM:com-verify-6l48a7749654671o34434u3788714712548593026.com",
       "longueur": 56,
-      "z_score": 6.327
+      "z_score": 6.3472
     },
     {
       "ioc": "DOM:complete-status.govert-internal.net",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:completeinformationsucses.securedacc-support.info",
       "longueur": 49,
-      "z_score": 5.181
+      "z_score": 5.1981
     },
     {
       "ioc": "DOM:completeyouracsesinfo.01reyztx-payment.xyz",
       "longueur": 42,
-      "z_score": 4.035
+      "z_score": 4.049
     },
     {
       "ioc": "DOM:customerservicepaymentsaccounts.info",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:customerupdatebillingaccounts.biz",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:de-sparkasse-tangenehmigung-03.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:de-sparkasse-tangenehmigung-04.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:de-sparkasse-tangenehmigung-05.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:de-sparkasse-tangenehmigung-06.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:de-sparkasse-tangenehmigung-07.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:de-sparkasse-tangenehmigung-08.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:de-sparkasse-tangenehmigung-09.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:deliveryplatform-account-id523486.xyz",
       "longueur": 37,
-      "z_score": 3.2165
+      "z_score": 3.2282
     },
     {
       "ioc": "DOM:directaction.irs-submitidentity.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:discord-application-moderators.xyz",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:document.documentElement.scrollHeight",
       "longueur": 37,
-      "z_score": 3.2165
+      "z_score": 3.2282
     },
     {
       "ioc": "DOM:document.documentElement.scrollTop",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:domainaccess-payee-cancel-help.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:domainamefwseoirgamazongegweaofseg.xyz",
       "longueur": 38,
-      "z_score": 3.3802
+      "z_score": 3.3923
     },
     {
       "ioc": "DOM:domainaramexshipments-verifying.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:domainauthentification-amazon.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:domaincom-verify-6l48a7749654671o34434u3788714712548593024.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:domaindevelopers-discord-intents.com",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:domainformularyhypesquadevents.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:domainformularys-moderatorsacademy.com",
       "longueur": 38,
-      "z_score": 3.3802
+      "z_score": 3.3923
     },
     {
       "ioc": "DOM:domaingov-get-my-economic-impact-payment-submission.com",
       "longueur": 55,
-      "z_score": 6.1633
+      "z_score": 6.183
     },
     {
       "ioc": "DOM:domaininstagram-infringement.online",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:domainlogin-academy-formulary.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:domainlogin-moderator-academy.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:domainlycamobile-verifyidentify.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:domainmanage-payee-cancellation-help.com",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:domainnl-loginmijnaccount.business",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:domainonlinesupportaibsecurity-update.com",
       "longueur": 41,
-      "z_score": 3.8713
+      "z_score": 3.8848
     },
     {
       "ioc": "DOM:domainregister-discord-academy.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:domainregisterdiscord-academy.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:domainsparkasse-authentifizierungdienst.com",
       "longueur": 43,
-      "z_score": 4.1987
+      "z_score": 4.2131
     },
     {
       "ioc": "DOM:domainupdatesecurities-detailsone-mtbinu.xyz",
       "longueur": 44,
-      "z_score": 4.3625
+      "z_score": 4.3773
     },
     {
       "ioc": "DOM:domainvehicles-program-purchase-protection.com",
       "longueur": 46,
-      "z_score": 4.6899
+      "z_score": 4.7056
     },
     {
       "ioc": "DOM:domainverify-payee-reversal-help.com",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:extradigitalmoneylnferbankcash.site",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:facebooklivesocialmediacompanies.com",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:getrefund.irs.gov-addpayment.info",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:gov-economic-impact-payment-coronavirus.com",
       "longueur": 43,
-      "z_score": 4.1987
+      "z_score": 4.2131
     },
     {
       "ioc": "DOM:gov-get-my-economic-impact-payment-of-corona-virus.com",
       "longueur": 54,
-      "z_score": 5.9996
+      "z_score": 6.0189
     },
     {
       "ioc": "DOM:gov-get-my-payment-impact-coronavirus-pandemic.com",
       "longueur": 50,
-      "z_score": 5.3447
+      "z_score": 5.3622
     },
     {
       "ioc": "DOM:gov-us-economic-impact-payment-corona-virus.com",
       "longueur": 47,
-      "z_score": 4.8536
+      "z_score": 4.8698
     },
     {
       "ioc": "DOM:gov-us-economic-impact-payment-coronavirus.online",
       "longueur": 49,
-      "z_score": 5.181
+      "z_score": 5.1981
     },
     {
       "ioc": "DOM:hobby-business-trip-home-delivery-purchase.site",
       "longueur": 47,
-      "z_score": 4.8536
+      "z_score": 4.8698
     },
     {
       "ioc": "DOM:https-2022-validierung-online.xyz",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:https-aktualisieurngs-service-online.xyz",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:https-amzn-validierungs-service.xyz",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:https-validerungs-service-online.xyz",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:httpsbabygsmommyandmemyshopifycomadminsettingsdomains.com",
       "longueur": 57,
-      "z_score": 6.4907
+      "z_score": 6.5113
     },
     {
       "ioc": "DOM:httpssystemsecurity-365online.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:httpswwwwww2641gatelydrw1002.info",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:internet-banking-caixaeconomica.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:intlcorexapps-ppcamzsecurewebverifyinformation.com",
       "longueur": 50,
-      "z_score": 5.3447
+      "z_score": 5.3622
     },
     {
       "ioc": "DOM:irs-gov.coronavirus-tax-relief-and-economic-impact-payments.com",
       "longueur": 63,
-      "z_score": 7.473
+      "z_score": 7.4963
     },
     {
       "ioc": "DOM:irs-gov.update-your-payment-details.com",
       "longueur": 39,
-      "z_score": 3.5439
+      "z_score": 3.5565
     },
     {
       "ioc": "DOM:irs-gov.us-coronavirus-tax-relief-impact.com",
       "longueur": 44,
-      "z_score": 4.3625
+      "z_score": 4.3773
     },
     {
       "ioc": "DOM:irs-gov.us-coronavirus-tax-relief-in-disaster-situations.com",
       "longueur": 60,
-      "z_score": 6.9819
+      "z_score": 7.0038
     },
     {
       "ioc": "DOM:irs-gov.us-economic-impact-payment-funds.com",
       "longueur": 44,
-      "z_score": 4.3625
+      "z_score": 4.3773
     },
     {
       "ioc": "DOM:irs-gov.us-get-funds-assistance.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:irs-gov.us-get-funds-coronavirus-economic-impact.com",
       "longueur": 52,
-      "z_score": 5.6722
+      "z_score": 5.6905
     },
     {
       "ioc": "DOM:irs-gov.us-get-payment-submission.com",
       "longueur": 37,
-      "z_score": 3.2165
+      "z_score": 3.2282
     },
     {
       "ioc": "DOM:irs-gov.us-tax-relief-in-disaster-situations.com",
       "longueur": 48,
-      "z_score": 5.0173
+      "z_score": 5.0339
     },
     {
       "ioc": "DOM:irs-informationsubmitinfo.ge-information.xyz",
       "longueur": 44,
-      "z_score": 4.3625
+      "z_score": 4.3773
     },
     {
       "ioc": "DOM:irs-taxxdeptreffundprocess.taxxtermsreffund01.net",
       "longueur": 49,
-      "z_score": 5.181
+      "z_score": 5.1981
     },
     {
       "ioc": "DOM:irs.claim-tax.pkbmngudikapinteran.sch.id",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:irs.gov-coronavirus-pandemic-tax-refund-submission.com",
       "longueur": 54,
-      "z_score": 5.9996
+      "z_score": 6.0189
     },
     {
       "ioc": "DOM:irs.gov-my-tax-refund-submission.com",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:irs.gov-tax-refund-submission.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:irs.gov-us-economic-impact-payment-coronavirus.com",
       "longueur": 50,
-      "z_score": 5.3447
+      "z_score": 5.3622
     },
     {
       "ioc": "DOM:irs.payment-return.tax.smpbonavita.my.id",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:irs.profile-claimtax19-onlineus.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:jp.rnercariei.loginjg0fghf84.dpek.cn",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:jp.rnercariei.loginjg0fghf84fd7.dazin.cn",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:jp.rrnercari.jpsinginsdfgd8dhgs6dff.cyre.cn",
       "longueur": 43,
-      "z_score": 4.1987
+      "z_score": 4.2131
     },
     {
       "ioc": "DOM:latestnews.pricesrakutenlogin.xyz",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:mail.account-locked.amazon.com.give-satisfaction.info",
       "longueur": 53,
-      "z_score": 5.8359
+      "z_score": 5.8547
     },
     {
       "ioc": "DOM:mail.gov-taxid.completofyours.info",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:metamask-verificationprotocol.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:mypostoffice-parcel-redelivery.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:netflix-mon-espace-facturation.fr",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:newcustomerconfirmationsupports.online",
       "longueur": 38,
-      "z_score": 3.3802
+      "z_score": 3.3923
     },
     {
       "ioc": "DOM:notabletorakutencardloginmail.xyz",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:online-citi-secure-panel-secure-recovery.com",
       "longueur": 44,
-      "z_score": 4.3625
+      "z_score": 4.3773
     },
     {
       "ioc": "DOM:onlinebanking.security-new-payee.com",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:post-office-parcel-reschedule-delivery.com",
       "longueur": 42,
-      "z_score": 4.035
+      "z_score": 4.049
     },
     {
       "ioc": "DOM:postoffice-redeliveries-support.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:rakutan.co.jploginffd9dfg7.carwork.cn",
       "longueur": 37,
-      "z_score": 3.2165
+      "z_score": 3.2282
     },
     {
       "ioc": "DOM:rakutan.co.jploginffd9dfg7h.iotbaas.cn",
       "longueur": 38,
-      "z_score": 3.3802
+      "z_score": 3.3923
     },
     {
       "ioc": "DOM:rakutan.co.jploginvcx8ds.nanoart.cn",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:rakutan.co.jploginvcx8dsa.nanonews.cn",
       "longueur": 37,
-      "z_score": 3.2165
+      "z_score": 3.2282
     },
     {
       "ioc": "DOM:reglementation-informations-login.com",
       "longueur": 37,
-      "z_score": 3.2165
+      "z_score": 3.2282
     },
     {
       "ioc": "DOM:reglementation1-informations-login.com",
       "longueur": 38,
-      "z_score": 3.3802
+      "z_score": 3.3923
     },
     {
       "ioc": "DOM:safeaccess.irs.gov-portalpay.info",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:samsungvendorcallcentrewadala.xyz",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:scured-payment.irs.gov.caseserv.cloudns.ph",
       "longueur": 42,
-      "z_score": 4.035
+      "z_score": 4.049
     },
     {
       "ioc": "DOM:secure-wellsfargo-verfication.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:signin-accountwebbappservices.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:signin-requiredupdateinformationamz.com",
       "longueur": 39,
-      "z_score": 3.5439
+      "z_score": 3.5565
     },
     {
       "ioc": "DOM:signinpaypals-restrictedaccounts.com",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:spear4h2potiyk43oilufhuq2jqbioyaizcs7xttlyw75s5ykwxpxlid.onion",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:statement-updatecode-educated-axhzl.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-azgsk.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-bvfnt.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-csifj.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-doeif.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-dxjin.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-dzeay.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-eoniq.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-esbzs.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-flguu.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-flrjz.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-fnoqg.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-fubfk.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-howmx.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-hqmnl.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-jkoir.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-jrmqm.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-jvrgo.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-liapn.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-liglm.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-lvxca.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-mdbbf.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-mwpon.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-ogupr.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-ouenz.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-pkvhg.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-puxgo.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-pwvfh.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-qxadh.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-raici.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-rmdsz.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-rqsyi.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-sdzbs.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-sqlqo.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-sqpux.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-srnye.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-ubfqo.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-uovmh.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-uoxoi.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-uvdek.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-vubpc.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-wudlq.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-xnswj.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-xtxap.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-xzzjs.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-yrcub.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-yyyrb.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-zckku.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-zkjfe.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:statement-updatecode-educated-zwjmk.info",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:submitdata.irs.extendsubscription.info",
       "longueur": 38,
-      "z_score": 3.3802
+      "z_score": 3.3923
     },
     {
       "ioc": "DOM:submitdata.irs.gov-customersupport.info",
       "longueur": 39,
-      "z_score": 3.5439
+      "z_score": 3.5565
     },
     {
       "ioc": "DOM:thelatestnews.pricesrakutenlogin.xyz",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:thenorthshoredolepineappletour.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:trniuen-norteitperz.tycerianz.shop",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:tweedehands-betaalplatform.online",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:update-profile-account9239323.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:us-economic-impact-payments.online",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:us-lang-irs.gov-claim-recovery-rebate-credit.com",
       "longueur": 48,
-      "z_score": 5.0173
+      "z_score": 5.0339
     },
     {
       "ioc": "DOM:verifyinformation-appsxsecuredns739.com",
       "longueur": 39,
-      "z_score": 3.5439
+      "z_score": 3.5565
     },
     {
       "ioc": "DOM:verizonsmallbusinessessentals.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:verizonsmallbusinessesssentials.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:verizonsmallbusinesssessentials.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:verizonsmallbusnessessentials.com",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:verizonsmalllbusinessessentials.com",
       "longueur": 35,
-      "z_score": 2.889
+      "z_score": 2.8999
     },
     {
       "ioc": "DOM:verizonsnallbusinessessentials.com",
       "longueur": 34,
-      "z_score": 2.7253
+      "z_score": 2.7357
     },
     {
       "ioc": "DOM:veryfed-accountend-helping-formsed.com",
       "longueur": 38,
-      "z_score": 3.3802
+      "z_score": 3.3923
     },
     {
       "ioc": "DOM:vvellsfargos8i76yth5yerth.website",
       "longueur": 33,
-      "z_score": 2.5616
+      "z_score": 2.5715
     },
     {
       "ioc": "DOM:web-serviceappverifyaccountservc.com",
       "longueur": 36,
-      "z_score": 3.0527
+      "z_score": 3.064
     },
     {
       "ioc": "DOM:webb-app-irs-gov.us-tax-relief-economic-impact-coronavirus.com",
       "longueur": 62,
-      "z_score": 7.3093
+      "z_score": 7.3321
     },
     {
       "ioc": "DOM:webb-irs-gov-us.third-payment-assistance-funds.com",
       "longueur": 50,
-      "z_score": 5.3447
+      "z_score": 5.3622
     },
     {
       "ioc": "DOM:winxeerror9854353-help-24x7support03.online",
       "longueur": 43,
-      "z_score": 4.1987
+      "z_score": 4.2131
     },
     {
       "ioc": "DOM:www1.bigsmeil-etc.jpsingincxf9d6ds4fgt.majon.cn",
       "longueur": 47,
-      "z_score": 4.8536
+      "z_score": 4.8698
     },
     {
       "ioc": "DOM:www2.bigsmeil-etc.jpsingincxf9d6ds4fgt.majon.cn",
       "longueur": 47,
-      "z_score": 4.8536
+      "z_score": 4.8698
     },
     {
       "ioc": "DOM:www2.jp.rrnercari.jpsinginsdfgd8dhgs6dff.cyre.cn",
       "longueur": 48,
-      "z_score": 5.0173
+      "z_score": 5.0339
     },
     {
       "ioc": "DOM:www2.rakutan.co.jploginffd9dfg7.carwork.cn",
       "longueur": 42,
-      "z_score": 4.035
+      "z_score": 4.049
     },
     {
       "ioc": "DOM:www2.rakutan.co.jploginffd9dfg7h.iotbaas.cn",
       "longueur": 43,
-      "z_score": 4.1987
+      "z_score": 4.2131
     },
     {
       "ioc": "DOM:www2.rakutan.co.jploginvcx8ds.nanoart.cn",
       "longueur": 40,
-      "z_score": 3.7076
+      "z_score": 3.7206
     },
     {
       "ioc": "DOM:www2.rakutan.co.jploginvcx8dsa.nanonews.cn",
       "longueur": 42,
-      "z_score": 4.035
+      "z_score": 4.049
     },
     {
       "ioc": "DOM:www2.samllsmeil-etc.jpsingincxf9d6ds4fgt.majon.cn",
       "longueur": 49,
-      "z_score": 5.181
+      "z_score": 5.1981
     },
     {
       "ioc": "DOM:www3.bigsmeil-etc.jpsingincxf9d6ds4fgt.majon.cn",
       "longueur": 47,
-      "z_score": 4.8536
+      "z_score": 4.8698
     },
     {
       "ioc": "DOM:www3.jp.rnercariei.loginjg0fghf84.dpek.cn",
       "longueur": 41,
-      "z_score": 3.8713
+      "z_score": 3.8848
     },
     {
       "ioc": "DOM:www3.jp.rnercariei.loginjg0fghf84fd7.dazin.cn",
       "longueur": 45,
-      "z_score": 4.5262
+      "z_score": 4.5414
     },
     {
       "ioc": "DOM:www4.bigsmeil-etc.jpsingincxf9d6ds4fgt.majon.cn",
       "longueur": 47,
-      "z_score": 4.8536
+      "z_score": 4.8698
     },
     {
       "ioc": "HASH:efa413e1ccc0ad52a63160ed30cea75eb251faacbbb8bc6b10dcaa9a5bbf01c8",
       "longueur": 64,
-      "z_score": 7.6367
+      "z_score": 7.6604
     }
   ]
 }

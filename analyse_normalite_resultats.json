@@ -1,0 +1,16 @@
+{
+  "n_observations": 9383,
+  "moyenne": 17.3349,
+  "ecart_type": 6.0917,
+  "shapiro_wilk": {
+    "statistique": 0.7282,
+    "p_value": 0.0
+  },
+  "kolmogorov_smirnov": {
+    "statistique": 0.2852,
+    "p_value": 0.0
+  },
+  "skewness": 2.78,
+  "kurtosis": 11.8978,
+  "normalite_rejetee": true
+}

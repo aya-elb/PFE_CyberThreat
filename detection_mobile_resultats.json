@@ -1,19 +1,15 @@
 {
-  "date_analyse": "2026-06-08 13:17:39",
+  "date_analyse": "2026-06-16 18:08:25",
   "source_donnees": "scraped_all.json (donnees reelles)",
   "methode": "N-sigma avec moyenne mobile glissante",
   "fenetre": 50,
   "seuil_n_sigma": 2.5,
-  "total_iocs": 9318,
-  "nb_anomalies": 252,
-  "pourcentage": 2.7,
+  "total_iocs": 9383,
+  "nb_anomalies": 254,
+  "pourcentage": 2.71,
   "anomalies": [
     {
       "ioc": "IP:103.12.68.0/22",
-      "longueur": 14
-    },
-    {
-      "ioc": "IP:103.12.70.0/23",
       "longueur": 14
     },
     {
@@ -87,6 +83,10 @@
     {
       "ioc": "IP:127.0.0.0/8",
       "longueur": 11
+    },
+    {
+      "ioc": "IP:161.0.0.0/19",
+      "longueur": 12
     }
   ]
 }

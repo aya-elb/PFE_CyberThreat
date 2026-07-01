@@ -1,26 +1,50 @@
 # 🛡️ Système Intelligent de Détection et Prédiction des Cybermenaces
 
-> Projet de fin d'études — Licence Statistique et Sciences des Données
+> Projet de Fin d'Études — Licence Statistique et Sciences des Données  
+> FST Tanger — Université Abdelmalek Essaâdi — 2025/2026  
+> **Auteure :** Aya EL BAKRAOUI  
+> **Encadrant universitaire :** Pr. Halimi Rachid  
+> **Encadrant entreprise :** Mr. Youssef Cheikhi (NearSecure, Rabat)
 
 ---
 
 ## 📌 Vue d'ensemble
 
 Système automatisé combinant méthodes statistiques, Machine Learning et LLM
-pour détecter, analyser et prédire les cybermenaces à partir de données réelles
-collectées depuis des sources ouvertes (Firehol, spear.cx).
+pour détecter, analyser et prédire les cybermenaces à partir de **9 383 IOCs réels**
+collectés depuis trois sources ouvertes reconnues.
 
 ---
 
 ## 🚀 Lancement
 
+### Pipeline complet
 ```bash
-# Activer l'environnement virtuel
 .\venv\Scripts\activate
-
-# Lancer le pipeline complet
 python main.py
 ```
+
+### Interface web
+```bash
+streamlit run app.py
+```
+
+---
+
+## 🧩 Structure du projet
+PFE_CyberThreat/
+
+├── src/                    → 14 modules Python
+
+├── outputs/                → Graphiques générés automatiquement
+
+├── main.py                 → Orchestrateur principal
+
+├── app.py                  → Interface web Streamlit
+
+├── requirements.txt        → Dépendances Python
+
+└── .env                    → Clés API (non pushé sur GitHub)
 
 ---
 
@@ -28,18 +52,20 @@ python main.py
 
 | Fichier | Description |
 |---|---|
-| `collecte.py` | Collecte données réelles (Firehol + spear.cx) |
-| `extraction_iocs.py` | Extraction des IOCs (IPs, domaines, hashs) |
-| `detection_anomalies.py` | Détection anomalies par Z-score (N-sigma) |
-| `detection_anomalies_mobile.py` | Détection N-sigma avec moyenne mobile glissante |
-| `isolation_forest.py` | Isolation Forest + Extended Isolation Forest |
-| `ml_supervise.py` | Classification ML supervisée (LR, Random Forest, SVM) |
-| `prediction_temporelle.py` | Prédiction temporelle sur 30 jours |
-| `clustering.py` | Clustering K-Means — 4 familles de menaces |
-| `graph_menaces.py` | Modélisation par graphes (NetworkX) |
-| `lstm_sktime.py` | Prédiction séquentielle LSTM (via sktime) |
-| `vrai_llm_qwen.py` | Analyse contextuelle LLM (Qwen 1.8B local) |
-| `stockage_sqlite.py` | Stockage structuré en base SQLite |
+| `src/collecte.py` | Collecte depuis Firehol + spear.cx + AlienVault OTX |
+| `src/extraction_iocs.py` | Extraction des IOCs (IPs, domaines, hashs) |
+| `src/detection_anomalies.py` | Détection anomalies par Z-score |
+| `src/detection_anomalies_mobile.py` | Détection N-sigma avec moyenne mobile |
+| `src/isolation_forest.py` | Isolation Forest + Extended Isolation Forest |
+| `src/ml_supervise.py` | Classification ML supervisée (LR, RF, SVM) |
+| `src/clustering.py` | Clustering K-Means — 4 familles de menaces |
+| `src/graph_menaces.py` | Modélisation par graphes (NetworkX) |
+| `src/prediction_temporelle.py` | Prédiction temporelle — régression linéaire |
+| `src/lstm_sktime.py` | Prédiction séquentielle LSTM (via sktime) |
+| `src/vrai_llm_qwen.py` | Analyse contextuelle LLM (Qwen 1.8B local) |
+| `src/stockage_sqlite.py` | Stockage structuré en base SQLite |
+| `src/analyse_normalite.py` | Tests de normalité (Shapiro-Wilk, KS) |
+| `src/validation_ml.py` | Validation croisée k-fold + ROC-AUC |
 
 ---
 
@@ -47,23 +73,38 @@ python main.py
 
 | Source | Type | Quantité |
 |---|---|---|
-| Firehol level1 | IPs / Plages CIDR blacklistées | 4 385 |
-| spear.cx | Domaines suspects | 89 |
-| spear.cx | Hashs MD5 malveillants | 9 |
-| **Total IOCs** | | **4 483** |
+| Firehol Level 1 | IPs / Plages CIDR malveillantes | 4 729 |
+| spear.cx + AlienVault OTX | Domaines suspects | 4 668 |
+| spear.cx | Hashs MD5 malveillants | 10 |
+| **Total IOCs** | | **9 383** |
 
 ---
 
 ## 📈 Résultats obtenus
 
-| Méthode | Résultat |
-|---|---|
-| Z-score | 62 anomalies détectées (1.4%) |
-| Moyenne mobile | 106 anomalies détectées (2.4%) |
-| Isolation Forest | 223 anomalies détectées (5.0%) |
-| Extended IF | 217 anomalies détectées (4.8%) |
-| ML supervisé (meilleur) | Logistic Regression — 97.73% accuracy |
-| Clustering K-Means | 4 familles : DDoS, Phishing, Reconnaissance, Malware |
+| Méthode | Type | Résultat |
+|---|---|---|
+| Z-score | Statistique | 245 anomalies (2,6%) |
+| Moyenne mobile N-sigma | Statistique adaptative | 254 anomalies (2,7%) |
+| Isolation Forest | ML non-supervisé | 470 anomalies (5,0%) |
+| Extended Isolation Forest | ML non-supervisé | 470 + 89 supplémentaires |
+| Random Forest | ML supervisé | **93,73% accuracy — AUC 0,9654** |
+| Logistic Regression | ML supervisé | 92,19% accuracy |
+| SVM | ML supervisé | 92,29% accuracy |
+| K-Means | Clustering | 4 familles de menaces |
+| LSTM (sktime) | ML séquentiel | ~27 menaces/pas |
+| LLM Qwen 1.8B | IA générative | Analyse contextuelle |
+
+---
+
+## ✅ Validation scientifique
+
+| Test | Statistique | p-value | Conclusion |
+|---|---|---|---|
+| Shapiro-Wilk | W = 0,7282 | < 0,001 | Normalité rejetée |
+| Kolmogorov-Smirnov | D = 0,2852 | < 0,001 | Normalité rejetée |
+
+Validation croisée k-fold (k=5) — Random Forest : **93,88% ± 0,31% — IC95% [93,61 ; 94,15]**
 
 ---
 
@@ -73,9 +114,11 @@ python main.py
 pip install -r requirements.txt
 ```
 
+Créez un fichier `.env` à la racine :
+OTX_API_KEY=votre_clé_ici
+
 **Prérequis LLM :**
 ```bash
-# Installer Ollama puis télécharger le modèle
 ollama pull qwen:1.8b
 ```
 
@@ -83,5 +126,5 @@ ollama pull qwen:1.8b
 
 ## 🛠️ Technologies
 
-`Python 3.14` · `scikit-learn` · `NetworkX` · `sktime` · `Ollama` ·
-`SQLite` · `matplotlib` · `pandas` · `numpy` · `BeautifulSoup`
+`Python 3.14` · `scikit-learn` · `NetworkX` · `sktime` · `Streamlit` ·
+`Ollama` · `SQLite` · `matplotlib` · `pandas` · `numpy` · `BeautifulSoup`

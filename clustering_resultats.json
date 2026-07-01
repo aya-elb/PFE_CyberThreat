@@ -1,25 +1,25 @@
 {
-  "date_analyse": "2026-06-08 13:17:18",
+  "date_analyse": "2026-06-16 18:08:10",
   "source_donnees": "scraped_all.json (donnees reelles collectees)",
   "methode": "K-Means (k=4) sur features extraites des IOCs reels",
-  "total_iocs": 9318,
+  "total_iocs": 9383,
   "clusters": {
     "0": {
       "nom": "Domaine suspect / Phishing",
-      "nb_iocs": 2781,
-      "moy_longueur": 15.22,
-      "moy_entropie": 3.3825,
+      "nb_iocs": 1863,
+      "moy_longueur": 26.4,
+      "moy_entropie": 3.8553,
       "exemples": [
-        "DOM:01reyztx-payment.xyz",
-        "DOM:02-update-auth.com",
-        "DOM:02reyztx-payment.xyz"
+        "DOM:02pack-update-sim.com",
+        "DOM:03c3t0rbm09uqtnnre00703.com",
+        "DOM:03c3t0rjmk5qrtnpree1780.com"
       ]
     },
     "1": {
       "nom": "Plage reseau blacklistee / DDoS",
-      "nb_iocs": 4642,
+      "nb_iocs": 4707,
       "moy_longueur": 14.73,
-      "moy_entropie": 2.8273,
+      "moy_entropie": 2.8276,
       "exemples": [
         "IP:0.0.0.0/8",
         "IP:1.10.16.0/20",
@@ -28,13 +28,13 @@
     },
     "2": {
       "nom": "Scan de ports / Reconnaissance",
-      "nb_iocs": 1867,
-      "moy_longueur": 26.39,
-      "moy_entropie": 3.8551,
+      "nb_iocs": 2785,
+      "moy_longueur": 15.23,
+      "moy_entropie": 3.383,
       "exemples": [
-        "DOM:02pack-update-sim.com",
-        "DOM:03c3t0rbm09uqtnnre00703.com",
-        "DOM:03c3t0rjmk5qrtnpree1780.com"
+        "DOM:01reyztx-payment.xyz",
+        "DOM:02-update-auth.com",
+        "DOM:02reyztx-payment.xyz"
       ]
     },
     "3": {
